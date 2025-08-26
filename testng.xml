@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Appium Multi Device Test Suite" parallel="methods" thread-count="2">
+    
+    <test name="Android Settings Tests" preserve-order="true">
+        <classes>
+            <class name="com.appiumautomation.testrunners.CucumberTestRunner"/>
+        </classes>
+    </test>
+    
+    <!-- Smoke Test Suite -->
+    <test name="Smoke Tests" preserve-order="true">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.appiumautomation.testrunners.CucumberTestRunner"/>
+        </classes>
+    </test>
+    
+    <!-- Regression Test Suite -->
+    <test name="Regression Tests" preserve-order="true">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.appiumautomation.testrunners.CucumberTestRunner"/>
+        </classes>
+    </test>
+    
+    <!-- Wi-Fi Tests -->
+    <test name="Wi-Fi Tests" preserve-order="true">
+        <groups>
+            <run>
+                <include name="wifi"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.appiumautomation.testrunners.CucumberTestRunner"/>
+        </classes>
+    </test>
+    
+</suite>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="4" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-26T21:44:45 GMT+03:00" name="Appium Multi Device Test Suite" finished-at="2025-08-26T21:44:45 GMT+03:00" duration-ms="496">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.appiumautomation.testrunners.CucumberTestRunner@350aac89]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-08-26T21:44:45 GMT+03:00" name="Android Settings Tests" finished-at="2025-08-26T21:44:45 GMT+03:00" duration-ms="444">
+      <class name="com.appiumautomation.testrunners.CucumberTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.appiumautomation.testrunners.CucumberTestRunner@350aac89]" started-at="2025-08-26T21:44:45 GMT+03:00" name="setUpClass" finished-at="2025-08-26T21:44:45 GMT+03:00" duration-ms="327" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@776a6d9b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.appiumautomation.testrunners.CucumberTestRunner@350aac89]" started-at="2025-08-26T21:44:45 GMT+03:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-26T21:44:45 GMT+03:00" duration-ms="43" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Chrome'da Google'a Gitme"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Chrome Browser Test"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Cannot stop.  Current container state was: CONSTRUCTED]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Cannot stop.  Current container state was: CONSTRUCTED
+at org.picocontainer.lifecycle.DefaultLifecycleState.stopping(DefaultLifecycleState.java:72)
+at org.picocontainer.DefaultPicoContainer.stop(DefaultPicoContainer.java:794)
+at io.cucumber.picocontainer.PicoFactory.stop(PicoFactory.java:50)
+at io.cucumber.core.runner.Runner.disposeBackendWorlds(Runner.java:156)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:78)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+at java.base/java.lang.Thread.run(Thread.java:1447)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.appiumautomation.testrunners.CucumberTestRunner@350aac89]" started-at="2025-08-26T21:44:45 GMT+03:00" name="tearDownClass" finished-at="2025-08-26T21:44:45 GMT+03:00" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.appiumautomation.testrunners.CucumberTestRunner -->
+    </test> <!-- Android Settings Tests -->
+    <test started-at="2025-08-26T21:44:45 GMT+03:00" name="Smoke Tests" finished-at="2025-08-26T21:44:45 GMT+03:00" duration-ms="0">
+    </test> <!-- Smoke Tests -->
+    <test started-at="2025-08-26T21:44:45 GMT+03:00" name="Regression Tests" finished-at="2025-08-26T21:44:45 GMT+03:00" duration-ms="0">
+    </test> <!-- Regression Tests -->
+    <test started-at="2025-08-26T21:44:45 GMT+03:00" name="Wi-Fi Tests" finished-at="2025-08-26T21:44:45 GMT+03:00" duration-ms="0">
+      <class name="com.appiumautomation.testrunners.CucumberTestRunner">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.appiumautomation.testrunners.CucumberTestRunner@350aac89]" started-at="2025-08-26T21:44:45 GMT+03:00" name="beforeSuite" finished-at="2025-08-26T21:44:45 GMT+03:00" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.appiumautomation.testrunners.CucumberTestRunner@350aac89]" started-at="2025-08-26T21:44:45 GMT+03:00" name="afterSuite" finished-at="2025-08-26T21:44:45 GMT+03:00" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.appiumautomation.testrunners.CucumberTestRunner -->
+    </test> <!-- Wi-Fi Tests -->
+  </suite> <!-- Appium Multi Device Test Suite -->
+</testng-results>

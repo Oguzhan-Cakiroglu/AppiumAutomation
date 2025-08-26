@@ -1,0 +1,1179 @@
+2025-08-26 21:27:18.149 [TestNG-test=Android Settings Tests-1] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Ayarlar Arama Fonksiyonu
+2025-08-26 21:27:18.150 [TestNG-test=Android Settings Tests-1] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başlatılıyor... Test Modu: EMULATORS
+2025-08-26 21:27:18.150 [TestNG-test=Android Settings Tests-1] INFO  com.appiumautomation.hooks.Hooks - Emulator modu başlatılıyor...
+2025-08-26 21:27:18.157 [TestNG-test=Android Settings Tests-1] ERROR c.a.utils.EmulatorManager - AVD listesi alınırken hata
+java.io.IOException: Cannot run program "avdmanager": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1044)
+	at java.base/java.lang.Runtime.exec(Runtime.java:605)
+	at java.base/java.lang.Runtime.exec(Runtime.java:436)
+	at java.base/java.lang.Runtime.exec(Runtime.java:321)
+	at com.appiumautomation.utils.EmulatorManager.listAvailableAVDs(EmulatorManager.java:34)
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:95)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:59)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:290)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:221)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1076)
+	... 40 common frames omitted
+2025-08-26 21:27:18.158 [TestNG-test=Android Settings Tests-1] ERROR com.appiumautomation.hooks.Hooks - Hiçbir AVD bulunamadı! Android Studio'da AVD oluşturun.
+2025-08-26 21:27:18.158 [TestNG-test=Android Settings Tests-1] ERROR com.appiumautomation.hooks.Hooks - Test ortamı başlatılırken hata
+java.lang.RuntimeException: AVD bulunamadı
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:98)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:59)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2025-08-26 21:27:18.163 [TestNG-test=Android Settings Tests-1] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Ayarlar Arama Fonksiyonu - Durum: FAILED
+2025-08-26 21:27:18.163 [TestNG-test=Android Settings Tests-1] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Ayarlar Arama Fonksiyonu
+2025-08-26 21:27:18.173 [TestNG-test=Android Settings Tests-1] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Ayarlar Menüsünde Gezinme
+2025-08-26 21:27:18.174 [TestNG-test=Android Settings Tests-1] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başlatılıyor... Test Modu: EMULATORS
+2025-08-26 21:27:18.174 [TestNG-test=Android Settings Tests-1] INFO  com.appiumautomation.hooks.Hooks - Emulator modu başlatılıyor...
+2025-08-26 21:27:18.177 [TestNG-test=Android Settings Tests-1] ERROR c.a.utils.EmulatorManager - AVD listesi alınırken hata
+java.io.IOException: Cannot run program "avdmanager": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1044)
+	at java.base/java.lang.Runtime.exec(Runtime.java:605)
+	at java.base/java.lang.Runtime.exec(Runtime.java:436)
+	at java.base/java.lang.Runtime.exec(Runtime.java:321)
+	at com.appiumautomation.utils.EmulatorManager.listAvailableAVDs(EmulatorManager.java:34)
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:95)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:59)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:290)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:221)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1076)
+	... 40 common frames omitted
+2025-08-26 21:27:18.179 [TestNG-test=Android Settings Tests-1] ERROR com.appiumautomation.hooks.Hooks - Hiçbir AVD bulunamadı! Android Studio'da AVD oluşturun.
+2025-08-26 21:27:18.179 [TestNG-test=Android Settings Tests-1] ERROR com.appiumautomation.hooks.Hooks - Test ortamı başlatılırken hata
+java.lang.RuntimeException: AVD bulunamadı
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:98)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:59)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2025-08-26 21:27:18.182 [TestNG-test=Android Settings Tests-1] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Ayarlar Menüsünde Gezinme - Durum: FAILED
+2025-08-26 21:27:18.182 [TestNG-test=Android Settings Tests-1] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Ayarlar Menüsünde Gezinme
+2025-08-26 21:27:18.239 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizleniyor...
+2025-08-26 21:27:18.240 [main] INFO  c.a.utils.EmulatorManager - Tüm emulator'lar durduruluyor...
+2025-08-26 21:27:18.247 [main] INFO  c.a.utils.EmulatorManager - Tüm emulator süreçleri sonlandırıldı
+2025-08-26 21:27:18.247 [main] INFO  c.a.utils.EmulatorManager - Tüm emulator'lar durduruldu
+2025-08-26 21:27:18.247 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizlendi
+2025-08-26 21:29:51.692 [TestNG-test=Android Settings Tests-1] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Ayarlar Arama Fonksiyonu
+2025-08-26 21:29:51.694 [TestNG-test=Android Settings Tests-1] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başlatılıyor... Test Modu: EMULATORS
+2025-08-26 21:29:51.694 [TestNG-test=Android Settings Tests-1] INFO  com.appiumautomation.hooks.Hooks - Emulator modu başlatılıyor...
+2025-08-26 21:29:51.699 [TestNG-test=Android Settings Tests-1] ERROR c.a.utils.EmulatorManager - AVD listesi alınırken hata
+java.io.IOException: Cannot run program "avdmanager": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1044)
+	at java.base/java.lang.Runtime.exec(Runtime.java:605)
+	at java.base/java.lang.Runtime.exec(Runtime.java:436)
+	at java.base/java.lang.Runtime.exec(Runtime.java:321)
+	at com.appiumautomation.utils.EmulatorManager.listAvailableAVDs(EmulatorManager.java:34)
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:95)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:59)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:290)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:221)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1076)
+	... 40 common frames omitted
+2025-08-26 21:29:51.700 [TestNG-test=Android Settings Tests-1] ERROR com.appiumautomation.hooks.Hooks - Hiçbir AVD bulunamadı! Android Studio'da AVD oluşturun.
+2025-08-26 21:29:51.700 [TestNG-test=Android Settings Tests-1] ERROR com.appiumautomation.hooks.Hooks - Test ortamı başlatılırken hata
+java.lang.RuntimeException: AVD bulunamadı
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:98)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:59)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2025-08-26 21:29:51.705 [TestNG-test=Android Settings Tests-1] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Ayarlar Arama Fonksiyonu - Durum: FAILED
+2025-08-26 21:29:51.705 [TestNG-test=Android Settings Tests-1] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Ayarlar Arama Fonksiyonu
+2025-08-26 21:29:51.712 [TestNG-test=Android Settings Tests-1] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Ayarlar Menüsünde Gezinme
+2025-08-26 21:29:51.712 [TestNG-test=Android Settings Tests-1] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başlatılıyor... Test Modu: EMULATORS
+2025-08-26 21:29:51.712 [TestNG-test=Android Settings Tests-1] INFO  com.appiumautomation.hooks.Hooks - Emulator modu başlatılıyor...
+2025-08-26 21:29:51.719 [TestNG-test=Android Settings Tests-1] ERROR c.a.utils.EmulatorManager - AVD listesi alınırken hata
+java.io.IOException: Cannot run program "avdmanager": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1044)
+	at java.base/java.lang.Runtime.exec(Runtime.java:605)
+	at java.base/java.lang.Runtime.exec(Runtime.java:436)
+	at java.base/java.lang.Runtime.exec(Runtime.java:321)
+	at com.appiumautomation.utils.EmulatorManager.listAvailableAVDs(EmulatorManager.java:34)
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:95)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:59)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:290)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:221)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1076)
+	... 40 common frames omitted
+2025-08-26 21:29:51.720 [TestNG-test=Android Settings Tests-1] ERROR com.appiumautomation.hooks.Hooks - Hiçbir AVD bulunamadı! Android Studio'da AVD oluşturun.
+2025-08-26 21:29:51.720 [TestNG-test=Android Settings Tests-1] ERROR com.appiumautomation.hooks.Hooks - Test ortamı başlatılırken hata
+java.lang.RuntimeException: AVD bulunamadı
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:98)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:59)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2025-08-26 21:29:51.724 [TestNG-test=Android Settings Tests-1] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Ayarlar Menüsünde Gezinme - Durum: FAILED
+2025-08-26 21:29:51.724 [TestNG-test=Android Settings Tests-1] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Ayarlar Menüsünde Gezinme
+2025-08-26 21:29:51.817 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizleniyor...
+2025-08-26 21:29:51.818 [main] INFO  c.a.utils.EmulatorManager - Tüm emulator'lar durduruluyor...
+2025-08-26 21:29:51.832 [main] INFO  c.a.utils.EmulatorManager - Tüm emulator süreçleri sonlandırıldı
+2025-08-26 21:29:51.832 [main] INFO  c.a.utils.EmulatorManager - Tüm emulator'lar durduruldu
+2025-08-26 21:29:51.832 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizlendi
+2025-08-26 21:31:38.039 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizleniyor...
+2025-08-26 21:31:38.040 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizlendi
+2025-08-26 21:33:21.509 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizleniyor...
+2025-08-26 21:33:21.510 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizlendi
+2025-08-26 21:34:19.084 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+2025-08-26 21:34:19.401 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Ayarlar Arama Fonksiyonu
+2025-08-26 21:34:19.402 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başlatılıyor... Test Modu: EMULATORS
+2025-08-26 21:34:19.402 [main] INFO  com.appiumautomation.hooks.Hooks - Emulator modu başlatılıyor...
+2025-08-26 21:34:19.408 [main] ERROR c.a.utils.EmulatorManager - AVD listesi alınırken hata
+java.io.IOException: Cannot run program "avdmanager": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1044)
+	at java.base/java.lang.Runtime.exec(Runtime.java:605)
+	at java.base/java.lang.Runtime.exec(Runtime.java:436)
+	at java.base/java.lang.Runtime.exec(Runtime.java:321)
+	at com.appiumautomation.utils.EmulatorManager.listAvailableAVDs(EmulatorManager.java:34)
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:98)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:61)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:290)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:221)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1076)
+	... 51 common frames omitted
+2025-08-26 21:34:19.410 [main] WARN  com.appiumautomation.hooks.Hooks - AVD listesi alınamadı, mevcut emulator'ları kullanıyoruz...
+2025-08-26 21:34:19.410 [main] INFO  com.appiumautomation.hooks.Hooks - Mevcut emulator'lardan Device listesi oluşturuluyor...
+2025-08-26 21:34:19.411 [main] INFO  com.appiumautomation.hooks.Hooks - 2 emulator için Device objeleri oluşturuldu
+2025-08-26 21:34:19.411 [main] INFO  c.a.utils.AppiumServerManager - Appium sunucuları başlatılıyor...
+2025-08-26 21:34:19.412 [pool-2-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 21:34:19.412 [pool-2-thread-1] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 21:34:24.427 [pool-2-thread-1] ERROR c.a.utils.AppiumServerManager - Appium sunucusu başlatılamadı - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 21:34:24.428 [pool-2-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başarıyla başlatıldı - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 21:34:29.413 [main] INFO  c.a.utils.AppiumServerManager - 2 Appium sunucusu başlatıldı
+2025-08-26 21:34:29.414 [main] INFO  c.a.core.DriverManager - Driver'lar başlatılıyor...
+2025-08-26 21:34:29.437 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Ayarlar Arama Fonksiyonu - Durum: FAILED
+2025-08-26 21:34:29.437 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Ayarlar Arama Fonksiyonu
+2025-08-26 21:34:29.479 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Ayarlar Menüsünde Gezinme
+2025-08-26 21:34:29.479 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başlatılıyor... Test Modu: EMULATORS
+2025-08-26 21:34:29.480 [main] INFO  com.appiumautomation.hooks.Hooks - Emulator modu başlatılıyor...
+2025-08-26 21:34:29.535 [main] ERROR c.a.utils.EmulatorManager - AVD listesi alınırken hata
+java.io.IOException: Cannot run program "avdmanager": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1044)
+	at java.base/java.lang.Runtime.exec(Runtime.java:605)
+	at java.base/java.lang.Runtime.exec(Runtime.java:436)
+	at java.base/java.lang.Runtime.exec(Runtime.java:321)
+	at com.appiumautomation.utils.EmulatorManager.listAvailableAVDs(EmulatorManager.java:34)
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:98)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:61)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:290)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:221)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1076)
+	... 51 common frames omitted
+2025-08-26 21:34:29.537 [main] WARN  com.appiumautomation.hooks.Hooks - AVD listesi alınamadı, mevcut emulator'ları kullanıyoruz...
+2025-08-26 21:34:29.537 [main] INFO  com.appiumautomation.hooks.Hooks - Mevcut emulator'lardan Device listesi oluşturuluyor...
+2025-08-26 21:34:29.537 [main] INFO  com.appiumautomation.hooks.Hooks - 2 emulator için Device objeleri oluşturuldu
+2025-08-26 21:34:29.537 [main] INFO  c.a.utils.AppiumServerManager - Appium sunucuları başlatılıyor...
+2025-08-26 21:34:29.538 [pool-4-thread-1] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 21:34:29.538 [pool-4-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 21:34:34.551 [pool-4-thread-1] ERROR c.a.utils.AppiumServerManager - Appium sunucusu başlatılamadı - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 21:34:34.552 [pool-4-thread-2] ERROR c.a.utils.AppiumServerManager - Appium sunucusu başlatılamadı - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 21:34:39.538 [main] INFO  c.a.utils.AppiumServerManager - 2 Appium sunucusu başlatıldı
+2025-08-26 21:34:39.539 [main] INFO  c.a.core.DriverManager - Driver'lar başlatılıyor...
+2025-08-26 21:34:39.541 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Ayarlar Menüsünde Gezinme - Durum: FAILED
+2025-08-26 21:34:39.541 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Ayarlar Menüsünde Gezinme
+2025-08-26 21:34:39.615 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizleniyor...
+2025-08-26 21:34:39.615 [main] INFO  c.a.core.DriverManager - Tüm driver'lar kapatılıyor...
+2025-08-26 21:34:39.615 [main] INFO  c.a.core.DriverManager - Tüm driver'lar kapatıldı
+2025-08-26 21:34:39.615 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium sunucuları durduruluyor...
+2025-08-26 21:34:39.621 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium süreçleri sonlandırıldı
+2025-08-26 21:34:39.621 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium sunucuları durduruldu
+2025-08-26 21:34:39.622 [main] INFO  c.a.utils.EmulatorManager - Tüm emulator'lar durduruluyor...
+2025-08-26 21:34:39.624 [main] INFO  c.a.utils.EmulatorManager - Tüm emulator süreçleri sonlandırıldı
+2025-08-26 21:34:39.625 [main] INFO  c.a.utils.EmulatorManager - Tüm emulator'lar durduruldu
+2025-08-26 21:34:39.625 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizlendi
+2025-08-26 21:39:47.145 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizleniyor...
+2025-08-26 21:39:47.147 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizlendi (Emulator'lar açık bırakıldı)
+2025-08-26 21:40:16.204 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+2025-08-26 21:40:16.550 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Ayarlar Arama Fonksiyonu
+2025-08-26 21:40:16.551 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başlatılıyor... Test Modu: EMULATORS
+2025-08-26 21:40:16.551 [main] INFO  com.appiumautomation.hooks.Hooks - Emulator modu başlatılıyor...
+2025-08-26 21:40:16.559 [main] ERROR c.a.utils.EmulatorManager - AVD listesi alınırken hata
+java.io.IOException: Cannot run program "avdmanager": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1044)
+	at java.base/java.lang.Runtime.exec(Runtime.java:605)
+	at java.base/java.lang.Runtime.exec(Runtime.java:436)
+	at java.base/java.lang.Runtime.exec(Runtime.java:321)
+	at com.appiumautomation.utils.EmulatorManager.listAvailableAVDs(EmulatorManager.java:34)
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:98)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:61)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:290)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:221)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1076)
+	... 51 common frames omitted
+2025-08-26 21:40:16.561 [main] WARN  com.appiumautomation.hooks.Hooks - AVD listesi alınamadı, mevcut emulator'ları kullanıyoruz...
+2025-08-26 21:40:16.562 [main] INFO  com.appiumautomation.hooks.Hooks - Mevcut emulator'lardan Device listesi oluşturuluyor...
+2025-08-26 21:40:16.562 [main] INFO  com.appiumautomation.hooks.Hooks - 2 emulator için Device objeleri oluşturuldu
+2025-08-26 21:40:16.562 [main] INFO  c.a.utils.AppiumServerManager - Appium sunucuları başlatılıyor...
+2025-08-26 21:40:16.563 [pool-2-thread-1] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 21:40:16.563 [pool-2-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 21:40:21.579 [pool-2-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başarıyla başlatıldı - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 21:40:21.581 [pool-2-thread-1] ERROR c.a.utils.AppiumServerManager - Appium sunucusu başlatılamadı - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 21:40:26.568 [main] INFO  c.a.utils.AppiumServerManager - 2 Appium sunucusu başlatıldı
+2025-08-26 21:40:26.569 [main] INFO  c.a.core.DriverManager - Driver'lar başlatılıyor...
+2025-08-26 21:40:26.591 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Ayarlar Arama Fonksiyonu - Durum: FAILED
+2025-08-26 21:40:26.591 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Ayarlar Arama Fonksiyonu
+2025-08-26 21:40:26.598 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Ayarlar Menüsünde Gezinme
+2025-08-26 21:40:26.598 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başlatılıyor... Test Modu: EMULATORS
+2025-08-26 21:40:26.598 [main] INFO  com.appiumautomation.hooks.Hooks - Emulator modu başlatılıyor...
+2025-08-26 21:40:26.602 [main] ERROR c.a.utils.EmulatorManager - AVD listesi alınırken hata
+java.io.IOException: Cannot run program "avdmanager": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1044)
+	at java.base/java.lang.Runtime.exec(Runtime.java:605)
+	at java.base/java.lang.Runtime.exec(Runtime.java:436)
+	at java.base/java.lang.Runtime.exec(Runtime.java:321)
+	at com.appiumautomation.utils.EmulatorManager.listAvailableAVDs(EmulatorManager.java:34)
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:98)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:61)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:290)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:221)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1076)
+	... 51 common frames omitted
+2025-08-26 21:40:26.603 [main] WARN  com.appiumautomation.hooks.Hooks - AVD listesi alınamadı, mevcut emulator'ları kullanıyoruz...
+2025-08-26 21:40:26.603 [main] INFO  com.appiumautomation.hooks.Hooks - Mevcut emulator'lardan Device listesi oluşturuluyor...
+2025-08-26 21:40:26.603 [main] INFO  com.appiumautomation.hooks.Hooks - 2 emulator için Device objeleri oluşturuldu
+2025-08-26 21:40:26.604 [main] INFO  c.a.utils.AppiumServerManager - Appium sunucuları başlatılıyor...
+2025-08-26 21:40:26.604 [pool-4-thread-1] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 21:40:26.604 [pool-4-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 21:40:31.607 [pool-4-thread-1] ERROR c.a.utils.AppiumServerManager - Appium sunucusu başlatılamadı - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 21:40:31.612 [pool-4-thread-2] ERROR c.a.utils.AppiumServerManager - Appium sunucusu başlatılamadı - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 21:40:36.606 [main] INFO  c.a.utils.AppiumServerManager - 2 Appium sunucusu başlatıldı
+2025-08-26 21:40:36.606 [main] INFO  c.a.core.DriverManager - Driver'lar başlatılıyor...
+2025-08-26 21:40:36.611 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Ayarlar Menüsünde Gezinme - Durum: FAILED
+2025-08-26 21:40:36.611 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Ayarlar Menüsünde Gezinme
+2025-08-26 21:40:36.684 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizleniyor...
+2025-08-26 21:40:36.684 [main] INFO  c.a.core.DriverManager - Tüm driver'lar kapatılıyor...
+2025-08-26 21:40:36.684 [main] INFO  c.a.core.DriverManager - Tüm driver'lar kapatıldı
+2025-08-26 21:40:36.684 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium sunucuları durduruluyor...
+2025-08-26 21:40:36.688 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium süreçleri sonlandırıldı
+2025-08-26 21:40:36.689 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium sunucuları durduruldu
+2025-08-26 21:40:36.690 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizlendi (Emulator'lar açık bırakıldı)
+2025-08-26 21:44:45.592 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizleniyor...
+2025-08-26 21:44:45.593 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizlendi (Emulator'lar açık bırakıldı)
+2025-08-26 21:46:24.965 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+2025-08-26 21:46:25.455 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Wi-Fi Ayarlarını Kontrol Etme
+2025-08-26 21:46:25.455 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başlatılıyor... Test Modu: EMULATORS
+2025-08-26 21:46:25.455 [main] INFO  com.appiumautomation.hooks.Hooks - Emulator modu başlatılıyor...
+2025-08-26 21:46:25.465 [main] ERROR c.a.utils.EmulatorManager - AVD listesi alınırken hata
+java.io.IOException: Cannot run program "avdmanager": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1044)
+	at java.base/java.lang.Runtime.exec(Runtime.java:605)
+	at java.base/java.lang.Runtime.exec(Runtime.java:436)
+	at java.base/java.lang.Runtime.exec(Runtime.java:321)
+	at com.appiumautomation.utils.EmulatorManager.listAvailableAVDs(EmulatorManager.java:34)
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:98)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:61)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:290)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:221)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1076)
+	... 51 common frames omitted
+2025-08-26 21:46:25.470 [main] WARN  com.appiumautomation.hooks.Hooks - AVD listesi alınamadı, mevcut emulator'ları kullanıyoruz...
+2025-08-26 21:46:25.470 [main] INFO  com.appiumautomation.hooks.Hooks - Mevcut emulator'lardan Device listesi oluşturuluyor...
+2025-08-26 21:46:25.471 [main] INFO  com.appiumautomation.hooks.Hooks - 2 emulator için Device objeleri oluşturuldu
+2025-08-26 21:46:25.471 [main] INFO  c.a.utils.AppiumServerManager - Appium sunucuları başlatılıyor...
+2025-08-26 21:46:25.472 [pool-2-thread-1] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 21:46:25.473 [pool-2-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 21:46:30.500 [pool-2-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başarıyla başlatıldı - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 21:46:30.500 [pool-2-thread-1] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başarıyla başlatıldı - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 21:46:35.478 [main] INFO  c.a.utils.AppiumServerManager - 2 Appium sunucusu başlatıldı
+2025-08-26 21:46:35.479 [main] INFO  c.a.core.DriverManager - Driver'lar başlatılıyor...
+2025-08-26 21:46:35.511 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Wi-Fi Ayarlarını Kontrol Etme - Durum: FAILED
+2025-08-26 21:46:35.511 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Wi-Fi Ayarlarını Kontrol Etme
+2025-08-26 21:46:35.525 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Ayarlar Arama Fonksiyonu
+2025-08-26 21:46:35.526 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başlatılıyor... Test Modu: EMULATORS
+2025-08-26 21:46:35.526 [main] INFO  com.appiumautomation.hooks.Hooks - Emulator modu başlatılıyor...
+2025-08-26 21:46:35.536 [main] ERROR c.a.utils.EmulatorManager - AVD listesi alınırken hata
+java.io.IOException: Cannot run program "avdmanager": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1044)
+	at java.base/java.lang.Runtime.exec(Runtime.java:605)
+	at java.base/java.lang.Runtime.exec(Runtime.java:436)
+	at java.base/java.lang.Runtime.exec(Runtime.java:321)
+	at com.appiumautomation.utils.EmulatorManager.listAvailableAVDs(EmulatorManager.java:34)
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:98)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:61)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:290)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:221)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1076)
+	... 51 common frames omitted
+2025-08-26 21:46:35.537 [main] WARN  com.appiumautomation.hooks.Hooks - AVD listesi alınamadı, mevcut emulator'ları kullanıyoruz...
+2025-08-26 21:46:35.537 [main] INFO  com.appiumautomation.hooks.Hooks - Mevcut emulator'lardan Device listesi oluşturuluyor...
+2025-08-26 21:46:35.538 [main] INFO  com.appiumautomation.hooks.Hooks - 2 emulator için Device objeleri oluşturuldu
+2025-08-26 21:46:35.538 [main] INFO  c.a.utils.AppiumServerManager - Appium sunucuları başlatılıyor...
+2025-08-26 21:46:35.538 [pool-4-thread-1] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 21:46:35.538 [pool-4-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 21:46:40.543 [pool-4-thread-1] ERROR c.a.utils.AppiumServerManager - Appium sunucusu başlatılamadı - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 21:46:40.545 [pool-4-thread-2] ERROR c.a.utils.AppiumServerManager - Appium sunucusu başlatılamadı - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 21:46:45.542 [main] INFO  c.a.utils.AppiumServerManager - 2 Appium sunucusu başlatıldı
+2025-08-26 21:46:45.542 [main] INFO  c.a.core.DriverManager - Driver'lar başlatılıyor...
+2025-08-26 21:46:45.546 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Ayarlar Arama Fonksiyonu - Durum: FAILED
+2025-08-26 21:46:45.546 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Ayarlar Arama Fonksiyonu
+2025-08-26 21:46:45.553 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Ayarlar Menüsünde Gezinme
+2025-08-26 21:46:45.553 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başlatılıyor... Test Modu: EMULATORS
+2025-08-26 21:46:45.553 [main] INFO  com.appiumautomation.hooks.Hooks - Emulator modu başlatılıyor...
+2025-08-26 21:46:45.557 [main] ERROR c.a.utils.EmulatorManager - AVD listesi alınırken hata
+java.io.IOException: Cannot run program "avdmanager": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1044)
+	at java.base/java.lang.Runtime.exec(Runtime.java:605)
+	at java.base/java.lang.Runtime.exec(Runtime.java:436)
+	at java.base/java.lang.Runtime.exec(Runtime.java:321)
+	at com.appiumautomation.utils.EmulatorManager.listAvailableAVDs(EmulatorManager.java:34)
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:98)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:61)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:290)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:221)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1076)
+	... 51 common frames omitted
+2025-08-26 21:46:45.558 [main] WARN  com.appiumautomation.hooks.Hooks - AVD listesi alınamadı, mevcut emulator'ları kullanıyoruz...
+2025-08-26 21:46:45.558 [main] INFO  com.appiumautomation.hooks.Hooks - Mevcut emulator'lardan Device listesi oluşturuluyor...
+2025-08-26 21:46:45.558 [main] INFO  com.appiumautomation.hooks.Hooks - 2 emulator için Device objeleri oluşturuldu
+2025-08-26 21:46:45.558 [main] INFO  c.a.utils.AppiumServerManager - Appium sunucuları başlatılıyor...
+2025-08-26 21:46:45.559 [pool-6-thread-1] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 21:46:45.559 [pool-6-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 21:46:50.567 [pool-6-thread-1] ERROR c.a.utils.AppiumServerManager - Appium sunucusu başlatılamadı - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 21:46:50.567 [pool-6-thread-2] ERROR c.a.utils.AppiumServerManager - Appium sunucusu başlatılamadı - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 21:46:55.561 [main] INFO  c.a.utils.AppiumServerManager - 2 Appium sunucusu başlatıldı
+2025-08-26 21:46:55.561 [main] INFO  c.a.core.DriverManager - Driver'lar başlatılıyor...
+2025-08-26 21:46:55.564 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Ayarlar Menüsünde Gezinme - Durum: FAILED
+2025-08-26 21:46:55.564 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Ayarlar Menüsünde Gezinme
+2025-08-26 21:46:55.652 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizleniyor...
+2025-08-26 21:46:55.652 [main] INFO  c.a.core.DriverManager - Tüm driver'lar kapatılıyor...
+2025-08-26 21:46:55.653 [main] INFO  c.a.core.DriverManager - Tüm driver'lar kapatıldı
+2025-08-26 21:46:55.653 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium sunucuları durduruluyor...
+2025-08-26 21:46:55.657 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium süreçleri sonlandırıldı
+2025-08-26 21:46:55.658 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium sunucuları durduruldu
+2025-08-26 21:46:55.658 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizlendi (Emulator'lar açık bırakıldı)
+2025-08-26 21:47:29.817 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+2025-08-26 21:47:30.189 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Wi-Fi Ayarlarını Kontrol Etme
+2025-08-26 21:47:30.189 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başlatılıyor... Test Modu: EMULATORS
+2025-08-26 21:47:30.189 [main] INFO  com.appiumautomation.hooks.Hooks - Emulator modu başlatılıyor...
+2025-08-26 21:47:30.197 [main] ERROR c.a.utils.EmulatorManager - AVD listesi alınırken hata
+java.io.IOException: Cannot run program "avdmanager": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1044)
+	at java.base/java.lang.Runtime.exec(Runtime.java:605)
+	at java.base/java.lang.Runtime.exec(Runtime.java:436)
+	at java.base/java.lang.Runtime.exec(Runtime.java:321)
+	at com.appiumautomation.utils.EmulatorManager.listAvailableAVDs(EmulatorManager.java:34)
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:98)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:61)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:290)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:221)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1076)
+	... 51 common frames omitted
+2025-08-26 21:47:30.199 [main] WARN  com.appiumautomation.hooks.Hooks - AVD listesi alınamadı, mevcut emulator'ları kullanıyoruz...
+2025-08-26 21:47:30.199 [main] INFO  com.appiumautomation.hooks.Hooks - Mevcut emulator'lardan Device listesi oluşturuluyor...
+2025-08-26 21:47:30.200 [main] INFO  com.appiumautomation.hooks.Hooks - 2 emulator için Device objeleri oluşturuldu
+2025-08-26 21:47:30.200 [main] INFO  c.a.utils.AppiumServerManager - Appium sunucuları başlatılıyor...
+2025-08-26 21:47:30.201 [pool-2-thread-1] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 21:47:30.201 [pool-2-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 21:47:35.212 [pool-2-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başarıyla başlatıldı - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 21:47:35.212 [pool-2-thread-1] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başarıyla başlatıldı - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 21:47:40.202 [main] INFO  c.a.utils.AppiumServerManager - 2 Appium sunucusu başlatıldı
+2025-08-26 21:47:40.204 [main] INFO  c.a.core.DriverManager - Driver'lar başlatılıyor...
+2025-08-26 21:47:40.225 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Wi-Fi Ayarlarını Kontrol Etme - Durum: FAILED
+2025-08-26 21:47:40.225 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Wi-Fi Ayarlarını Kontrol Etme
+2025-08-26 21:47:40.235 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Ayarlar Arama Fonksiyonu
+2025-08-26 21:47:40.236 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başlatılıyor... Test Modu: EMULATORS
+2025-08-26 21:47:40.236 [main] INFO  com.appiumautomation.hooks.Hooks - Emulator modu başlatılıyor...
+2025-08-26 21:47:40.241 [main] ERROR c.a.utils.EmulatorManager - AVD listesi alınırken hata
+java.io.IOException: Cannot run program "avdmanager": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1044)
+	at java.base/java.lang.Runtime.exec(Runtime.java:605)
+	at java.base/java.lang.Runtime.exec(Runtime.java:436)
+	at java.base/java.lang.Runtime.exec(Runtime.java:321)
+	at com.appiumautomation.utils.EmulatorManager.listAvailableAVDs(EmulatorManager.java:34)
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:98)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:61)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:290)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:221)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1076)
+	... 51 common frames omitted
+2025-08-26 21:47:40.242 [main] WARN  com.appiumautomation.hooks.Hooks - AVD listesi alınamadı, mevcut emulator'ları kullanıyoruz...
+2025-08-26 21:47:40.242 [main] INFO  com.appiumautomation.hooks.Hooks - Mevcut emulator'lardan Device listesi oluşturuluyor...
+2025-08-26 21:47:40.242 [main] INFO  com.appiumautomation.hooks.Hooks - 2 emulator için Device objeleri oluşturuldu
+2025-08-26 21:47:40.242 [main] INFO  c.a.utils.AppiumServerManager - Appium sunucuları başlatılıyor...
+2025-08-26 21:47:40.243 [pool-4-thread-1] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 21:47:40.243 [pool-4-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 21:47:45.251 [pool-4-thread-2] ERROR c.a.utils.AppiumServerManager - Appium sunucusu başlatılamadı - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 21:47:45.251 [pool-4-thread-1] ERROR c.a.utils.AppiumServerManager - Appium sunucusu başlatılamadı - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 21:47:50.248 [main] INFO  c.a.utils.AppiumServerManager - 2 Appium sunucusu başlatıldı
+2025-08-26 21:47:50.248 [main] INFO  c.a.core.DriverManager - Driver'lar başlatılıyor...
+2025-08-26 21:47:50.251 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Ayarlar Arama Fonksiyonu - Durum: FAILED
+2025-08-26 21:47:50.251 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Ayarlar Arama Fonksiyonu
+2025-08-26 21:47:50.256 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Ayarlar Menüsünde Gezinme
+2025-08-26 21:47:50.256 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başlatılıyor... Test Modu: EMULATORS
+2025-08-26 21:47:50.256 [main] INFO  com.appiumautomation.hooks.Hooks - Emulator modu başlatılıyor...
+2025-08-26 21:47:50.260 [main] ERROR c.a.utils.EmulatorManager - AVD listesi alınırken hata
+java.io.IOException: Cannot run program "avdmanager": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1044)
+	at java.base/java.lang.Runtime.exec(Runtime.java:605)
+	at java.base/java.lang.Runtime.exec(Runtime.java:436)
+	at java.base/java.lang.Runtime.exec(Runtime.java:321)
+	at com.appiumautomation.utils.EmulatorManager.listAvailableAVDs(EmulatorManager.java:34)
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:98)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:61)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:290)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:221)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1076)
+	... 51 common frames omitted
+2025-08-26 21:47:50.260 [main] WARN  com.appiumautomation.hooks.Hooks - AVD listesi alınamadı, mevcut emulator'ları kullanıyoruz...
+2025-08-26 21:47:50.261 [main] INFO  com.appiumautomation.hooks.Hooks - Mevcut emulator'lardan Device listesi oluşturuluyor...
+2025-08-26 21:47:50.261 [main] INFO  com.appiumautomation.hooks.Hooks - 2 emulator için Device objeleri oluşturuldu
+2025-08-26 21:47:50.261 [main] INFO  c.a.utils.AppiumServerManager - Appium sunucuları başlatılıyor...
+2025-08-26 21:47:50.261 [pool-6-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 21:47:50.261 [pool-6-thread-1] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 21:47:55.266 [pool-6-thread-2] ERROR c.a.utils.AppiumServerManager - Appium sunucusu başlatılamadı - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 21:47:55.267 [pool-6-thread-1] ERROR c.a.utils.AppiumServerManager - Appium sunucusu başlatılamadı - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 21:48:00.262 [main] INFO  c.a.utils.AppiumServerManager - 2 Appium sunucusu başlatıldı
+2025-08-26 21:48:00.262 [main] INFO  c.a.core.DriverManager - Driver'lar başlatılıyor...
+2025-08-26 21:48:00.265 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Ayarlar Menüsünde Gezinme - Durum: FAILED
+2025-08-26 21:48:00.265 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Ayarlar Menüsünde Gezinme
+2025-08-26 21:48:00.341 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizleniyor...
+2025-08-26 21:48:00.341 [main] INFO  c.a.core.DriverManager - Tüm driver'lar kapatılıyor...
+2025-08-26 21:48:00.341 [main] INFO  c.a.core.DriverManager - Tüm driver'lar kapatıldı
+2025-08-26 21:48:00.341 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium sunucuları durduruluyor...
+2025-08-26 21:48:00.349 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium süreçleri sonlandırıldı
+2025-08-26 21:48:00.350 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium sunucuları durduruldu
+2025-08-26 21:48:00.350 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizlendi (Emulator'lar açık bırakıldı)
