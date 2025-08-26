@@ -103,6 +103,11 @@
                     <div class="method-list-content failed suite-Command_line_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.appiumautomation.testrunners.CucumberTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Ayarlar Menüsünde Gezinme&quot;, &quot;Android Ayarlar Uygulaması Testleri&quot;)">runScenario("Ayarlar Menüsünde Gezinme", "Android Ayarlar Uygulaması Testleri")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.appiumautomation.testrunners.CucumberTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Wi-Fi Ayarlarını Kontrol Etme&quot;, &quot;Android Ayarlar Uygulaması Testleri&quot;)">runScenario("Wi-Fi Ayarlarını Kontrol Etme", "Android Ayarlar Uygulaması Testleri")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -114,11 +119,6 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.appiumautomation.testrunners.CucumberTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Chrome&#039;da Google&#039;a Gitme&quot;, &quot;Chrome Browser Test&quot;)">runScenario("Chrome'da Google'a Gitme", "Chrome Browser Test")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.appiumautomation.testrunners.CucumberTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Ayarlar Menüsünde Gezinme&quot;, &quot;Android Ayarlar Uygulaması Testleri&quot;)">runScenario("Ayarlar Menüsünde Gezinme", "Android Ayarlar Uygulaması Testleri")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Command_line_suite -->
@@ -141,74 +141,65 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;Ayarlar Menüsünde Gezinme&quot;, &quot;Android Ayarlar Uygulaması Testleri&quot;)">
+                  </a> <!-- runScenario("Ayarlar Menüsünde Gezinme", "Android Ayarlar Uygulaması Testleri") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Ayarlar Menüsünde Gezinme","Android Ayarlar Uygulaması Testleri")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.6.1&apos;, java.version: &apos;24.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [9449f6d4-5908-4485-8a6d-427b5ddaabba, findElement {using=xpath, value=//android.widget.TextView[@text=&apos;Ayarlar&apos;]}]
+Capabilities {appium:appActivity: com.android.settings.Settings, appium:appPackage: com.android.settings, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Emulator-5554, fullReset: false, newCommandTimeout: 60, noReset: true, platformName: ANDROID, platformVersion: 11.0, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 60, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 9449f6d4-5908-4485-8a6d-427b5ddaabba
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.appiumautomation.steps.CommonSteps.findElement(CommonSteps.java:168)
+	at com.appiumautomation.steps.CommonSteps.kullaniciCihazdaElementiniTiklar(CommonSteps.java:48)
+	at ✽.kullanıcı &quot;device1&quot; cihazında &quot;Ayarlar&quot; elementini tıklar(file:///Users/oguzhancakiroglu/Documents/git/AppiumAutomation/src/test/resources/features/settings_test.feature:35)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;Wi-Fi Ayarlarını Kontrol Etme&quot;, &quot;Android Ayarlar Uygulaması Testleri&quot;)">
                   </a> <!-- runScenario("Wi-Fi Ayarlarını Kontrol Etme", "Android Ayarlar Uygulaması Testleri") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Wi-Fi Ayarlarını Kontrol Etme","Android Ayarlar Uygulaması Testleri")</span>
-                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/openqa/selenium/ContextAware
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:962)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:132)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:776)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:691)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:620)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:578)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:962)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:132)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:776)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:691)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:620)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:578)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
-	at com.appiumautomation.core.DriverManager.createDriver(DriverManager.java:71)
-	at com.appiumautomation.core.DriverManager.initializeDrivers(DriverManager.java:38)
-	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:78)
-	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.ContextAware
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:962)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:132)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:776)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:691)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:620)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:578)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:962)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:132)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:776)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:691)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:620)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:578)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
-	at com.appiumautomation.core.DriverManager.createDriver(DriverManager.java:71)
-	at com.appiumautomation.core.DriverManager.initializeDrivers(DriverManager.java:38)
-	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:78)
-	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
-	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
-	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
-... Removed 24 stack frames
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.6.1&apos;, java.version: &apos;24.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [9449f6d4-5908-4485-8a6d-427b5ddaabba, findElement {using=xpath, value=//*[@text=&apos;Wi-Fi&apos;]}]
+Capabilities {appium:appActivity: com.android.settings.Settings, appium:appPackage: com.android.settings, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Emulator-5554, fullReset: false, newCommandTimeout: 60, noReset: true, platformName: ANDROID, platformVersion: 11.0, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 60, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 9449f6d4-5908-4485-8a6d-427b5ddaabba
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.appiumautomation.steps.CommonSteps.findElement(CommonSteps.java:177)
+	at com.appiumautomation.steps.CommonSteps.kullaniciCihazdaElementiniTiklar(CommonSteps.java:48)
+	at ✽.kullanıcı &quot;device1&quot; cihazında &quot;Wi-Fi&quot; elementini tıklar(file:///Users/oguzhancakiroglu/Documents/git/AppiumAutomation/src/test/resources/features/settings_test.feature:13)
+... Removed 3 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
@@ -220,36 +211,28 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.ContextAware
                   </a> <!-- runScenario("Ayarlar Arama Fonksiyonu", "Android Ayarlar Uygulaması Testleri") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Ayarlar Arama Fonksiyonu","Android Ayarlar Uygulaması Testleri")</span>
-                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/openqa/selenium/ContextAware
-	at com.appiumautomation.core.DriverManager.createDriver(DriverManager.java:71)
-	at com.appiumautomation.core.DriverManager.initializeDrivers(DriverManager.java:38)
-	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:78)
-	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.ContextAware
-	at com.appiumautomation.core.DriverManager.createDriver(DriverManager.java:71)
-	at com.appiumautomation.core.DriverManager.initializeDrivers(DriverManager.java:38)
-	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:78)
-	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
-	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
-	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
-... Removed 24 stack frames
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.6.1&apos;, java.version: &apos;24.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [9449f6d4-5908-4485-8a6d-427b5ddaabba, findElement {using=id, value=android:id/search_src_text}]
+Capabilities {appium:appActivity: com.android.settings.Settings, appium:appPackage: com.android.settings, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Emulator-5554, fullReset: false, newCommandTimeout: 60, noReset: true, platformName: ANDROID, platformVersion: 11.0, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 60, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 9449f6d4-5908-4485-8a6d-427b5ddaabba
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.appiumautomation.steps.CommonSteps.findElement(CommonSteps.java:174)
+	at com.appiumautomation.steps.CommonSteps.kullaniciCihazdaAlanaYazar(CommonSteps.java:67)
+	at ✽.kullanıcı &quot;device1&quot; cihazında &quot;Arama&quot; alanına &quot;Wi-Fi&quot; yazar(file:///Users/oguzhancakiroglu/Documents/git/AppiumAutomation/src/test/resources/features/settings_test.feature:24)
+... Removed 3 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
@@ -261,62 +244,25 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.ContextAware
                   </a> <!-- runScenario("Chrome'da Google'a Gitme", "Chrome Browser Test") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Chrome'da Google'a Gitme","Chrome Browser Test")</span>
-                  <div class="stack-trace">java.lang.IllegalStateException: Cannot stop.  Current container state was: CONSTRUCTED
-	at org.picocontainer.lifecycle.DefaultLifecycleState.stopping(DefaultLifecycleState.java:72)
-	at org.picocontainer.DefaultPicoContainer.stop(DefaultPicoContainer.java:794)
-	at io.cucumber.picocontainer.PicoFactory.stop(PicoFactory.java:50)
-	at io.cucumber.core.runner.Runner.disposeBackendWorlds(Runner.java:156)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:78)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Ayarlar Menüsünde Gezinme&quot;, &quot;Android Ayarlar Uygulaması Testleri&quot;)">
-                  </a> <!-- runScenario("Ayarlar Menüsünde Gezinme", "Android Ayarlar Uygulaması Testleri") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Ayarlar Menüsünde Gezinme","Android Ayarlar Uygulaması Testleri")</span>
-                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/openqa/selenium/ContextAware
-	at com.appiumautomation.core.DriverManager.createDriver(DriverManager.java:71)
-	at com.appiumautomation.core.DriverManager.initializeDrivers(DriverManager.java:38)
-	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:78)
-	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.ContextAware
-	at com.appiumautomation.core.DriverManager.createDriver(DriverManager.java:71)
-	at com.appiumautomation.core.DriverManager.initializeDrivers(DriverManager.java:38)
-	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:78)
-	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
-	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
-	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
-... Removed 24 stack frames
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error attempting to start URI. Original error: Error: Error executing adbExec. Original error: &apos;Command &apos;/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start -W -a android.intent.action.VIEW -d https\://google.com com.android.settings&apos; exited with code 1&apos;; Command output: Starting: Intent { act=android.intent.action.VIEW dat=https://google.com/... pkg=com.android.settings }
+Error: Activity not started, unable to resolve Intent { act=android.intent.action.VIEW dat=https://google.com/... flg=0x10000000 pkg=com.android.settings }
+
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.6.1&apos;, java.version: &apos;24.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [9449f6d4-5908-4485-8a6d-427b5ddaabba, get {url=https://google.com}]
+Capabilities {appium:appActivity: com.android.settings.Settings, appium:appPackage: com.android.settings, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Emulator-5554, fullReset: false, newCommandTimeout: 60, noReset: true, platformName: ANDROID, platformVersion: 11.0, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 60, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 9449f6d4-5908-4485-8a6d-427b5ddaabba
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at com.appiumautomation.steps.ChromeSteps.kullaniciCihazdaAdreseGider(ChromeSteps.java:59)
+	at ✽.kullanıcı &quot;device1&quot; cihazında &quot;google.com&quot; adresine gider(file:///Users/oguzhancakiroglu/Documents/git/AppiumAutomation/src/test/resources/features/chrome_test.feature:11)
+... Removed 3 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
@@ -387,24 +333,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.appiumautomation.testrunners.CucumberTestRunner')
-data.setCell(0, 3, 10072);
+data.setCell(0, 3, 23431);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.appiumautomation.testrunners.CucumberTestRunner')
-data.setCell(1, 3, 10024);
+data.setCell(1, 3, 241);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'com.appiumautomation.testrunners.CucumberTestRunner')
-data.setCell(2, 3, 10015);
+data.setCell(2, 3, 55);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'com.appiumautomation.testrunners.CucumberTestRunner')
-data.setCell(3, 3, 34);
+data.setCell(3, 3, 35);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -436,40 +382,40 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@1b812421)</span>
-                <span class="method-start">12 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@5e8507f1)</span>
+                <span class="method-start">13 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Chrome'da Google'a Gitme", "Chrome Browser Test")</span>
-                <span class="method-start">301 ms</span>
+                <span class="method-start">311 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Wi-Fi Ayarlarını Kontrol Etme", "Android Ayarlar Uygulaması Testleri")</span>
-                <span class="method-start">336 ms</span>
+                <span class="method-start">23745 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Ayarlar Arama Fonksiyonu", "Android Ayarlar Uygulaması Testleri")</span>
-                <span class="method-start">10408 ms</span>
+                <span class="method-start">23986 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Ayarlar Menüsünde Gezinme", "Android Ayarlar Uygulaması Testleri")</span>
-                <span class="method-start">20432 ms</span>
+                <span class="method-start">24022 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">30448 ms</span>
+                <span class="method-start">24079 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">30521 ms</span>
+                <span class="method-start">24152 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

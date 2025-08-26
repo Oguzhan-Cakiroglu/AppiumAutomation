@@ -7,9 +7,9 @@
         <methods>
           <include name="setUpClass"/>
           <include name="afterSuite"/>
-          <include name="tearDownClass"/>
           <include name="beforeSuite"/>
           <include name="runScenario" invocation-numbers="0 1 2 3"/>
+          <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.appiumautomation.testrunners.CucumberTestRunner -->
     </classes>

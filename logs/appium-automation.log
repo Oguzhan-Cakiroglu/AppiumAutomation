@@ -1177,3 +1177,1111 @@ Caused by: java.io.IOException: error=2, No such file or directory
 2025-08-26 21:48:00.349 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium süreçleri sonlandırıldı
 2025-08-26 21:48:00.350 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium sunucuları durduruldu
 2025-08-26 21:48:00.350 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizlendi (Emulator'lar açık bırakıldı)
+2025-08-26 22:40:13.663 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+2025-08-26 22:40:14.079 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Chrome'da Google'a Gitme
+2025-08-26 22:40:14.080 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başlatılıyor... Test Modu: EMULATORS
+2025-08-26 22:40:14.080 [main] INFO  com.appiumautomation.hooks.Hooks - Emulator modu başlatılıyor...
+2025-08-26 22:40:14.089 [main] ERROR c.a.utils.EmulatorManager - AVD listesi alınırken hata
+java.io.IOException: Cannot run program "avdmanager": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1044)
+	at java.base/java.lang.Runtime.exec(Runtime.java:605)
+	at java.base/java.lang.Runtime.exec(Runtime.java:436)
+	at java.base/java.lang.Runtime.exec(Runtime.java:321)
+	at com.appiumautomation.utils.EmulatorManager.listAvailableAVDs(EmulatorManager.java:34)
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:98)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:61)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:290)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:221)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1076)
+	... 51 common frames omitted
+2025-08-26 22:40:14.091 [main] WARN  com.appiumautomation.hooks.Hooks - AVD listesi alınamadı, mevcut emulator'ları kullanıyoruz...
+2025-08-26 22:40:14.091 [main] INFO  com.appiumautomation.hooks.Hooks - Mevcut emulator'lardan Device listesi oluşturuluyor...
+2025-08-26 22:40:14.092 [main] INFO  com.appiumautomation.hooks.Hooks - 2 emulator için Device objeleri oluşturuldu
+2025-08-26 22:40:14.092 [main] INFO  c.a.utils.AppiumServerManager - Appium sunucuları başlatılıyor...
+2025-08-26 22:40:14.093 [pool-2-thread-1] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 22:40:14.093 [pool-2-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 22:40:19.114 [pool-2-thread-1] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başarıyla başlatıldı - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 22:40:19.114 [pool-2-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başarıyla başlatıldı - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 22:40:24.099 [main] INFO  c.a.utils.AppiumServerManager - 2 Appium sunucusu başlatıldı
+2025-08-26 22:40:24.102 [main] INFO  c.a.core.DriverManager - Driver'lar başlatılıyor...
+2025-08-26 22:40:24.180 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Chrome'da Google'a Gitme - Durum: FAILED
+2025-08-26 22:40:24.180 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Chrome'da Google'a Gitme
+2025-08-26 22:40:24.192 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Wi-Fi Ayarlarını Kontrol Etme
+2025-08-26 22:40:24.192 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başlatılıyor... Test Modu: EMULATORS
+2025-08-26 22:40:24.192 [main] INFO  com.appiumautomation.hooks.Hooks - Emulator modu başlatılıyor...
+2025-08-26 22:40:24.195 [main] ERROR c.a.utils.EmulatorManager - AVD listesi alınırken hata
+java.io.IOException: Cannot run program "avdmanager": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1044)
+	at java.base/java.lang.Runtime.exec(Runtime.java:605)
+	at java.base/java.lang.Runtime.exec(Runtime.java:436)
+	at java.base/java.lang.Runtime.exec(Runtime.java:321)
+	at com.appiumautomation.utils.EmulatorManager.listAvailableAVDs(EmulatorManager.java:34)
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:98)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:61)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:290)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:221)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1076)
+	... 51 common frames omitted
+2025-08-26 22:40:24.196 [main] WARN  com.appiumautomation.hooks.Hooks - AVD listesi alınamadı, mevcut emulator'ları kullanıyoruz...
+2025-08-26 22:40:24.196 [main] INFO  com.appiumautomation.hooks.Hooks - Mevcut emulator'lardan Device listesi oluşturuluyor...
+2025-08-26 22:40:24.196 [main] INFO  com.appiumautomation.hooks.Hooks - 2 emulator için Device objeleri oluşturuldu
+2025-08-26 22:40:24.196 [main] INFO  c.a.utils.AppiumServerManager - Appium sunucuları başlatılıyor...
+2025-08-26 22:40:24.197 [pool-4-thread-1] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 22:40:24.197 [pool-4-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 22:40:29.203 [pool-4-thread-1] ERROR c.a.utils.AppiumServerManager - Appium sunucusu başlatılamadı - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 22:40:29.207 [pool-4-thread-2] ERROR c.a.utils.AppiumServerManager - Appium sunucusu başlatılamadı - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 22:40:34.202 [main] INFO  c.a.utils.AppiumServerManager - 2 Appium sunucusu başlatıldı
+2025-08-26 22:40:34.204 [main] INFO  c.a.core.DriverManager - Driver'lar başlatılıyor...
+2025-08-26 22:40:34.208 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Wi-Fi Ayarlarını Kontrol Etme - Durum: FAILED
+2025-08-26 22:40:34.208 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Wi-Fi Ayarlarını Kontrol Etme
+2025-08-26 22:40:34.213 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Ayarlar Arama Fonksiyonu
+2025-08-26 22:40:34.213 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başlatılıyor... Test Modu: EMULATORS
+2025-08-26 22:40:34.214 [main] INFO  com.appiumautomation.hooks.Hooks - Emulator modu başlatılıyor...
+2025-08-26 22:40:34.218 [main] ERROR c.a.utils.EmulatorManager - AVD listesi alınırken hata
+java.io.IOException: Cannot run program "avdmanager": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1044)
+	at java.base/java.lang.Runtime.exec(Runtime.java:605)
+	at java.base/java.lang.Runtime.exec(Runtime.java:436)
+	at java.base/java.lang.Runtime.exec(Runtime.java:321)
+	at com.appiumautomation.utils.EmulatorManager.listAvailableAVDs(EmulatorManager.java:34)
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:98)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:61)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:290)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:221)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1076)
+	... 51 common frames omitted
+2025-08-26 22:40:34.219 [main] WARN  com.appiumautomation.hooks.Hooks - AVD listesi alınamadı, mevcut emulator'ları kullanıyoruz...
+2025-08-26 22:40:34.219 [main] INFO  com.appiumautomation.hooks.Hooks - Mevcut emulator'lardan Device listesi oluşturuluyor...
+2025-08-26 22:40:34.219 [main] INFO  com.appiumautomation.hooks.Hooks - 2 emulator için Device objeleri oluşturuldu
+2025-08-26 22:40:34.219 [main] INFO  c.a.utils.AppiumServerManager - Appium sunucuları başlatılıyor...
+2025-08-26 22:40:34.219 [pool-6-thread-1] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 22:40:34.220 [pool-6-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 22:40:39.228 [pool-6-thread-2] ERROR c.a.utils.AppiumServerManager - Appium sunucusu başlatılamadı - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 22:40:39.228 [pool-6-thread-1] ERROR c.a.utils.AppiumServerManager - Appium sunucusu başlatılamadı - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 22:40:44.221 [main] INFO  c.a.utils.AppiumServerManager - 2 Appium sunucusu başlatıldı
+2025-08-26 22:40:44.221 [main] INFO  c.a.core.DriverManager - Driver'lar başlatılıyor...
+2025-08-26 22:40:44.227 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Ayarlar Arama Fonksiyonu - Durum: FAILED
+2025-08-26 22:40:44.228 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Ayarlar Arama Fonksiyonu
+2025-08-26 22:40:44.238 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Ayarlar Menüsünde Gezinme
+2025-08-26 22:40:44.238 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başlatılıyor... Test Modu: EMULATORS
+2025-08-26 22:40:44.238 [main] INFO  com.appiumautomation.hooks.Hooks - Emulator modu başlatılıyor...
+2025-08-26 22:40:44.243 [main] ERROR c.a.utils.EmulatorManager - AVD listesi alınırken hata
+java.io.IOException: Cannot run program "avdmanager": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1044)
+	at java.base/java.lang.Runtime.exec(Runtime.java:605)
+	at java.base/java.lang.Runtime.exec(Runtime.java:436)
+	at java.base/java.lang.Runtime.exec(Runtime.java:321)
+	at com.appiumautomation.utils.EmulatorManager.listAvailableAVDs(EmulatorManager.java:34)
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:98)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:61)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:290)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:221)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1076)
+	... 51 common frames omitted
+2025-08-26 22:40:44.244 [main] WARN  com.appiumautomation.hooks.Hooks - AVD listesi alınamadı, mevcut emulator'ları kullanıyoruz...
+2025-08-26 22:40:44.244 [main] INFO  com.appiumautomation.hooks.Hooks - Mevcut emulator'lardan Device listesi oluşturuluyor...
+2025-08-26 22:40:44.244 [main] INFO  com.appiumautomation.hooks.Hooks - 2 emulator için Device objeleri oluşturuldu
+2025-08-26 22:40:44.244 [main] INFO  c.a.utils.AppiumServerManager - Appium sunucuları başlatılıyor...
+2025-08-26 22:40:44.244 [pool-8-thread-1] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 22:40:44.245 [pool-8-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 22:40:49.251 [pool-8-thread-1] ERROR c.a.utils.AppiumServerManager - Appium sunucusu başlatılamadı - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 22:40:49.254 [pool-8-thread-2] ERROR c.a.utils.AppiumServerManager - Appium sunucusu başlatılamadı - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 22:40:54.248 [main] INFO  c.a.utils.AppiumServerManager - 2 Appium sunucusu başlatıldı
+2025-08-26 22:40:54.248 [main] INFO  c.a.core.DriverManager - Driver'lar başlatılıyor...
+2025-08-26 22:40:54.256 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Ayarlar Menüsünde Gezinme - Durum: FAILED
+2025-08-26 22:40:54.257 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Ayarlar Menüsünde Gezinme
+2025-08-26 22:40:54.333 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizleniyor...
+2025-08-26 22:40:54.333 [main] INFO  c.a.core.DriverManager - Tüm driver'lar kapatılıyor...
+2025-08-26 22:40:54.334 [main] INFO  c.a.core.DriverManager - Tüm driver'lar kapatıldı
+2025-08-26 22:40:54.334 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium sunucuları durduruluyor...
+2025-08-26 22:40:54.338 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium süreçleri sonlandırıldı
+2025-08-26 22:40:54.339 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium sunucuları durduruldu
+2025-08-26 22:40:54.339 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizlendi (Emulator'lar açık bırakıldı)
+2025-08-26 22:44:24.897 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+2025-08-26 22:44:25.228 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Chrome'da Google'a Gitme
+2025-08-26 22:44:25.228 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başlatılıyor... Test Modu: EMULATORS
+2025-08-26 22:44:25.228 [main] INFO  com.appiumautomation.hooks.Hooks - Emulator modu başlatılıyor...
+2025-08-26 22:44:25.234 [main] ERROR c.a.utils.EmulatorManager - AVD listesi alınırken hata
+java.io.IOException: Cannot run program "avdmanager": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1044)
+	at java.base/java.lang.Runtime.exec(Runtime.java:605)
+	at java.base/java.lang.Runtime.exec(Runtime.java:436)
+	at java.base/java.lang.Runtime.exec(Runtime.java:321)
+	at com.appiumautomation.utils.EmulatorManager.listAvailableAVDs(EmulatorManager.java:34)
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:98)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:61)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:290)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:221)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1076)
+	... 51 common frames omitted
+2025-08-26 22:44:25.237 [main] WARN  com.appiumautomation.hooks.Hooks - AVD listesi alınamadı, mevcut emulator'ları kullanıyoruz...
+2025-08-26 22:44:25.237 [main] INFO  com.appiumautomation.hooks.Hooks - Mevcut emulator'lardan Device listesi oluşturuluyor...
+2025-08-26 22:44:25.237 [main] INFO  com.appiumautomation.hooks.Hooks - 2 emulator için Device objeleri oluşturuldu
+2025-08-26 22:44:25.237 [main] INFO  c.a.utils.AppiumServerManager - Appium sunucuları başlatılıyor...
+2025-08-26 22:44:25.238 [pool-2-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 22:44:25.238 [pool-2-thread-1] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 22:44:30.254 [pool-2-thread-1] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başarıyla başlatıldı - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 22:44:30.254 [pool-2-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başarıyla başlatıldı - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 22:44:35.243 [main] INFO  c.a.utils.AppiumServerManager - 2 Appium sunucusu başlatıldı
+2025-08-26 22:44:35.246 [main] INFO  c.a.core.DriverManager - Driver'lar başlatılıyor...
+2025-08-26 22:44:40.305 [main] INFO  c.a.core.DriverManager - Driver başarıyla oluşturuldu: Emulator-5554 - Port: 4723
+2025-08-26 22:44:40.306 [main] INFO  c.a.core.DriverManager - Driver oluşturuldu: Emulator-5554 - device1
+2025-08-26 22:44:45.639 [main] INFO  c.a.core.DriverManager - Driver başarıyla oluşturuldu: Emulator-5556 - Port: 4724
+2025-08-26 22:44:45.639 [main] INFO  c.a.core.DriverManager - Driver oluşturuldu: Emulator-5556 - device2
+2025-08-26 22:44:45.639 [main] INFO  c.a.core.DriverManager - Toplam 2 driver oluşturuldu
+2025-08-26 22:44:45.639 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başarıyla başlatıldı - 2 cihaz hazır
+2025-08-26 22:44:45.642 [main] INFO  c.appiumautomation.steps.ChromeSteps - Chrome açılıyor - Cihaz: device1
+2025-08-26 22:44:45.836 [main] INFO  c.appiumautomation.steps.ChromeSteps - Chrome başarıyla açıldı - Cihaz: device1
+2025-08-26 22:44:48.849 [main] INFO  c.appiumautomation.steps.ChromeSteps - Chrome açılıyor - Cihaz: device2
+2025-08-26 22:44:49.070 [main] INFO  c.appiumautomation.steps.ChromeSteps - Chrome başarıyla açıldı - Cihaz: device2
+2025-08-26 22:44:52.078 [main] INFO  c.appiumautomation.steps.ChromeSteps - URL'ye gidiliyor - Cihaz: device1, URL: google.com
+2025-08-26 22:44:52.279 [main] ERROR c.appiumautomation.steps.ChromeSteps - URL'ye gidilemedi - Cihaz: device1, URL: google.com
+org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error attempting to start URI. Original error: Error: Error executing adbExec. Original error: 'Command '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start -W -a android.intent.action.VIEW -d https\://google.com com.android.settings' exited with code 1'; Command output: Starting: Intent { act=android.intent.action.VIEW dat=https://google.com/... pkg=com.android.settings }
+Error: Activity not started, unable to resolve Intent { act=android.intent.action.VIEW dat=https://google.com/... flg=0x10000000 pkg=com.android.settings }
+
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '24.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5e3a11a5-db03-4c2e-9fb6-45f0ff6513aa, get {url=https://google.com}]
+Capabilities {appium:appActivity: com.android.settings.Settings, appium:appPackage: com.android.settings, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Emulator-5554, fullReset: false, newCommandTimeout: 60, noReset: true, platformName: ANDROID, platformVersion: 11.0, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 60, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 5e3a11a5-db03-4c2e-9fb6-45f0ff6513aa
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at com.appiumautomation.steps.ChromeSteps.kullaniciCihazdaAdreseGider(ChromeSteps.java:59)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+2025-08-26 22:44:52.289 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Chrome'da Google'a Gitme - Durum: FAILED
+2025-08-26 22:44:52.290 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Chrome'da Google'a Gitme
+2025-08-26 22:44:52.314 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Wi-Fi Ayarlarını Kontrol Etme
+2025-08-26 22:44:52.316 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama açılıyor - Cihaz: device1
+2025-08-26 22:44:52.316 [main] INFO  c.appiumautomation.steps.CommonSteps - Cihaz bilgileri: Device{deviceId='device1', deviceName='Emulator-5554', platformVersion='11.0', appiumPort=4723, systemPort=8200, udid='emulator-5554', status='null'}
+2025-08-26 22:44:52.319 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama başarıyla açıldı - Cihaz: device1
+2025-08-26 22:44:52.320 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama açılıyor - Cihaz: device2
+2025-08-26 22:44:52.320 [main] INFO  c.appiumautomation.steps.CommonSteps - Cihaz bilgileri: Device{deviceId='device2', deviceName='Emulator-5556', platformVersion='11.0', appiumPort=4724, systemPort=8201, udid='emulator-5556', status='null'}
+2025-08-26 22:44:52.320 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama başarıyla açıldı - Cihaz: device2
+2025-08-26 22:44:52.321 [main] INFO  c.appiumautomation.steps.CommonSteps - Element tıklanıyor - Cihaz: device1, Element: Wi-Fi
+2025-08-26 22:44:53.026 [main] ERROR c.appiumautomation.steps.CommonSteps - Element tıklanamadı - Cihaz: device1, Element: Wi-Fi
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '24.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5e3a11a5-db03-4c2e-9fb6-45f0ff6513aa, findElement {using=xpath, value=//*[@text='Wi-Fi']}]
+Capabilities {appium:appActivity: com.android.settings.Settings, appium:appPackage: com.android.settings, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Emulator-5554, fullReset: false, newCommandTimeout: 60, noReset: true, platformName: ANDROID, platformVersion: 11.0, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 60, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 5e3a11a5-db03-4c2e-9fb6-45f0ff6513aa
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.appiumautomation.steps.CommonSteps.findElement(CommonSteps.java:177)
+	at com.appiumautomation.steps.CommonSteps.kullaniciCihazdaElementiniTiklar(CommonSteps.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+2025-08-26 22:44:53.031 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Wi-Fi Ayarlarını Kontrol Etme - Durum: FAILED
+2025-08-26 22:44:53.031 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Wi-Fi Ayarlarını Kontrol Etme
+2025-08-26 22:44:53.040 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Ayarlar Arama Fonksiyonu
+2025-08-26 22:44:53.041 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama açılıyor - Cihaz: device1
+2025-08-26 22:44:53.041 [main] INFO  c.appiumautomation.steps.CommonSteps - Cihaz bilgileri: Device{deviceId='device1', deviceName='Emulator-5554', platformVersion='11.0', appiumPort=4723, systemPort=8200, udid='emulator-5554', status='null'}
+2025-08-26 22:44:53.041 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama başarıyla açıldı - Cihaz: device1
+2025-08-26 22:44:53.041 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama açılıyor - Cihaz: device2
+2025-08-26 22:44:53.041 [main] INFO  c.appiumautomation.steps.CommonSteps - Cihaz bilgileri: Device{deviceId='device2', deviceName='Emulator-5556', platformVersion='11.0', appiumPort=4724, systemPort=8201, udid='emulator-5556', status='null'}
+2025-08-26 22:44:53.041 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama başarıyla açıldı - Cihaz: device2
+2025-08-26 22:44:53.044 [main] INFO  c.appiumautomation.steps.CommonSteps - Metin yazılıyor - Cihaz: device1, Alan: Arama, Metin: Wi-Fi
+2025-08-26 22:44:53.102 [main] ERROR c.appiumautomation.steps.CommonSteps - Metin yazılamadı - Cihaz: device1, Alan: Arama, Metin: Wi-Fi
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '24.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5e3a11a5-db03-4c2e-9fb6-45f0ff6513aa, findElement {using=id, value=android:id/search_src_text}]
+Capabilities {appium:appActivity: com.android.settings.Settings, appium:appPackage: com.android.settings, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Emulator-5554, fullReset: false, newCommandTimeout: 60, noReset: true, platformName: ANDROID, platformVersion: 11.0, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 60, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 5e3a11a5-db03-4c2e-9fb6-45f0ff6513aa
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.appiumautomation.steps.CommonSteps.findElement(CommonSteps.java:174)
+	at com.appiumautomation.steps.CommonSteps.kullaniciCihazdaAlanaYazar(CommonSteps.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+2025-08-26 22:44:53.106 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Ayarlar Arama Fonksiyonu - Durum: FAILED
+2025-08-26 22:44:53.107 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Ayarlar Arama Fonksiyonu
+2025-08-26 22:44:53.116 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Ayarlar Menüsünde Gezinme
+2025-08-26 22:44:53.117 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama açılıyor - Cihaz: device1
+2025-08-26 22:44:53.117 [main] INFO  c.appiumautomation.steps.CommonSteps - Cihaz bilgileri: Device{deviceId='device1', deviceName='Emulator-5554', platformVersion='11.0', appiumPort=4723, systemPort=8200, udid='emulator-5554', status='null'}
+2025-08-26 22:44:53.117 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama başarıyla açıldı - Cihaz: device1
+2025-08-26 22:44:53.117 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama açılıyor - Cihaz: device2
+2025-08-26 22:44:53.117 [main] INFO  c.appiumautomation.steps.CommonSteps - Cihaz bilgileri: Device{deviceId='device2', deviceName='Emulator-5556', platformVersion='11.0', appiumPort=4724, systemPort=8201, udid='emulator-5556', status='null'}
+2025-08-26 22:44:53.117 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama başarıyla açıldı - Cihaz: device2
+2025-08-26 22:44:53.118 [main] INFO  c.appiumautomation.steps.CommonSteps - Element tıklanıyor - Cihaz: device1, Element: Ayarlar
+2025-08-26 22:44:53.255 [main] ERROR c.appiumautomation.steps.CommonSteps - Element tıklanamadı - Cihaz: device1, Element: Ayarlar
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '24.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5e3a11a5-db03-4c2e-9fb6-45f0ff6513aa, findElement {using=xpath, value=//android.widget.TextView[@text='Ayarlar']}]
+Capabilities {appium:appActivity: com.android.settings.Settings, appium:appPackage: com.android.settings, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Emulator-5554, fullReset: false, newCommandTimeout: 60, noReset: true, platformName: ANDROID, platformVersion: 11.0, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 60, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 5e3a11a5-db03-4c2e-9fb6-45f0ff6513aa
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.appiumautomation.steps.CommonSteps.findElement(CommonSteps.java:168)
+	at com.appiumautomation.steps.CommonSteps.kullaniciCihazdaElementiniTiklar(CommonSteps.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+2025-08-26 22:44:53.260 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Ayarlar Menüsünde Gezinme - Durum: FAILED
+2025-08-26 22:44:53.260 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Ayarlar Menüsünde Gezinme
+2025-08-26 22:44:53.360 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizleniyor...
+2025-08-26 22:44:53.360 [main] INFO  c.a.core.DriverManager - Tüm driver'lar kapatılıyor...
+2025-08-26 22:44:53.546 [main] INFO  c.a.core.DriverManager - Driver kapatıldı: device1
+2025-08-26 22:44:54.119 [main] INFO  c.a.core.DriverManager - Driver kapatıldı: device2
+2025-08-26 22:44:54.119 [main] INFO  c.a.core.DriverManager - Tüm driver'lar kapatıldı
+2025-08-26 22:44:54.119 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium sunucuları durduruluyor...
+2025-08-26 22:44:54.119 [main] INFO  c.a.utils.AppiumServerManager - Appium sunucusu durduruldu
+2025-08-26 22:44:54.120 [main] INFO  c.a.utils.AppiumServerManager - Appium sunucusu durduruldu
+2025-08-26 22:44:54.134 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium süreçleri sonlandırıldı
+2025-08-26 22:44:54.146 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium sunucuları durduruldu
+2025-08-26 22:44:54.146 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizlendi (Emulator'lar açık bırakıldı)
+2025-08-26 22:45:24.570 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+2025-08-26 22:45:24.967 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Chrome'da Google'a Gitme
+2025-08-26 22:45:24.968 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başlatılıyor... Test Modu: EMULATORS
+2025-08-26 22:45:24.968 [main] INFO  com.appiumautomation.hooks.Hooks - Emulator modu başlatılıyor...
+2025-08-26 22:45:24.975 [main] ERROR c.a.utils.EmulatorManager - AVD listesi alınırken hata
+java.io.IOException: Cannot run program "avdmanager": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1044)
+	at java.base/java.lang.Runtime.exec(Runtime.java:605)
+	at java.base/java.lang.Runtime.exec(Runtime.java:436)
+	at java.base/java.lang.Runtime.exec(Runtime.java:321)
+	at com.appiumautomation.utils.EmulatorManager.listAvailableAVDs(EmulatorManager.java:34)
+	at com.appiumautomation.hooks.Hooks.initializeEmulators(Hooks.java:98)
+	at com.appiumautomation.hooks.Hooks.initializeTestEnvironment(Hooks.java:61)
+	at com.appiumautomation.hooks.Hooks.setUp(Hooks.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:290)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:221)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1076)
+	... 51 common frames omitted
+2025-08-26 22:45:24.979 [main] WARN  com.appiumautomation.hooks.Hooks - AVD listesi alınamadı, mevcut emulator'ları kullanıyoruz...
+2025-08-26 22:45:24.979 [main] INFO  com.appiumautomation.hooks.Hooks - Mevcut emulator'lardan Device listesi oluşturuluyor...
+2025-08-26 22:45:24.980 [main] INFO  com.appiumautomation.hooks.Hooks - 2 emulator için Device objeleri oluşturuldu
+2025-08-26 22:45:24.980 [main] INFO  c.a.utils.AppiumServerManager - Appium sunucuları başlatılıyor...
+2025-08-26 22:45:24.982 [pool-2-thread-1] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 22:45:24.982 [pool-2-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başlatılıyor - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 22:45:30.048 [pool-2-thread-2] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başarıyla başlatıldı - Port: 4724, Cihaz: Emulator-5556
+2025-08-26 22:45:30.049 [pool-2-thread-1] INFO  c.a.utils.AppiumServerManager - Appium sunucusu başarıyla başlatıldı - Port: 4723, Cihaz: Emulator-5554
+2025-08-26 22:45:34.985 [main] INFO  c.a.utils.AppiumServerManager - 2 Appium sunucusu başlatıldı
+2025-08-26 22:45:34.987 [main] INFO  c.a.core.DriverManager - Driver'lar başlatılıyor...
+2025-08-26 22:45:38.123 [main] INFO  c.a.core.DriverManager - Driver başarıyla oluşturuldu: Emulator-5554 - Port: 4723
+2025-08-26 22:45:38.123 [main] INFO  c.a.core.DriverManager - Driver oluşturuldu: Emulator-5554 - device1
+2025-08-26 22:45:42.043 [main] INFO  c.a.core.DriverManager - Driver başarıyla oluşturuldu: Emulator-5556 - Port: 4724
+2025-08-26 22:45:42.043 [main] INFO  c.a.core.DriverManager - Driver oluşturuldu: Emulator-5556 - device2
+2025-08-26 22:45:42.043 [main] INFO  c.a.core.DriverManager - Toplam 2 driver oluşturuldu
+2025-08-26 22:45:42.043 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı başarıyla başlatıldı - 2 cihaz hazır
+2025-08-26 22:45:42.046 [main] INFO  c.appiumautomation.steps.ChromeSteps - Chrome açılıyor - Cihaz: device1
+2025-08-26 22:45:42.126 [main] INFO  c.appiumautomation.steps.ChromeSteps - Chrome başarıyla açıldı - Cihaz: device1
+2025-08-26 22:45:45.133 [main] INFO  c.appiumautomation.steps.ChromeSteps - Chrome açılıyor - Cihaz: device2
+2025-08-26 22:45:45.250 [main] INFO  c.appiumautomation.steps.ChromeSteps - Chrome başarıyla açıldı - Cihaz: device2
+2025-08-26 22:45:48.253 [main] INFO  c.appiumautomation.steps.ChromeSteps - URL'ye gidiliyor - Cihaz: device1, URL: google.com
+2025-08-26 22:45:48.308 [main] ERROR c.appiumautomation.steps.ChromeSteps - URL'ye gidilemedi - Cihaz: device1, URL: google.com
+org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error attempting to start URI. Original error: Error: Error executing adbExec. Original error: 'Command '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start -W -a android.intent.action.VIEW -d https\://google.com com.android.settings' exited with code 1'; Command output: Starting: Intent { act=android.intent.action.VIEW dat=https://google.com/... pkg=com.android.settings }
+Error: Activity not started, unable to resolve Intent { act=android.intent.action.VIEW dat=https://google.com/... flg=0x10000000 pkg=com.android.settings }
+
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '24.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [9449f6d4-5908-4485-8a6d-427b5ddaabba, get {url=https://google.com}]
+Capabilities {appium:appActivity: com.android.settings.Settings, appium:appPackage: com.android.settings, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Emulator-5554, fullReset: false, newCommandTimeout: 60, noReset: true, platformName: ANDROID, platformVersion: 11.0, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 60, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 9449f6d4-5908-4485-8a6d-427b5ddaabba
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at com.appiumautomation.steps.ChromeSteps.kullaniciCihazdaAdreseGider(ChromeSteps.java:59)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+2025-08-26 22:45:48.314 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Chrome'da Google'a Gitme - Durum: FAILED
+2025-08-26 22:45:48.314 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Chrome'da Google'a Gitme
+2025-08-26 22:45:48.322 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Wi-Fi Ayarlarını Kontrol Etme
+2025-08-26 22:45:48.323 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama açılıyor - Cihaz: device1
+2025-08-26 22:45:48.323 [main] INFO  c.appiumautomation.steps.CommonSteps - Cihaz bilgileri: Device{deviceId='device1', deviceName='Emulator-5554', platformVersion='11.0', appiumPort=4723, systemPort=8200, udid='emulator-5554', status='null'}
+2025-08-26 22:45:48.324 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama başarıyla açıldı - Cihaz: device1
+2025-08-26 22:45:48.324 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama açılıyor - Cihaz: device2
+2025-08-26 22:45:48.325 [main] INFO  c.appiumautomation.steps.CommonSteps - Cihaz bilgileri: Device{deviceId='device2', deviceName='Emulator-5556', platformVersion='11.0', appiumPort=4724, systemPort=8201, udid='emulator-5556', status='null'}
+2025-08-26 22:45:48.325 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama başarıyla açıldı - Cihaz: device2
+2025-08-26 22:45:48.325 [main] INFO  c.appiumautomation.steps.CommonSteps - Element tıklanıyor - Cihaz: device1, Element: Wi-Fi
+2025-08-26 22:45:48.555 [main] ERROR c.appiumautomation.steps.CommonSteps - Element tıklanamadı - Cihaz: device1, Element: Wi-Fi
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '24.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [9449f6d4-5908-4485-8a6d-427b5ddaabba, findElement {using=xpath, value=//*[@text='Wi-Fi']}]
+Capabilities {appium:appActivity: com.android.settings.Settings, appium:appPackage: com.android.settings, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Emulator-5554, fullReset: false, newCommandTimeout: 60, noReset: true, platformName: ANDROID, platformVersion: 11.0, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 60, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 9449f6d4-5908-4485-8a6d-427b5ddaabba
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.appiumautomation.steps.CommonSteps.findElement(CommonSteps.java:177)
+	at com.appiumautomation.steps.CommonSteps.kullaniciCihazdaElementiniTiklar(CommonSteps.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+2025-08-26 22:45:48.558 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Wi-Fi Ayarlarını Kontrol Etme - Durum: FAILED
+2025-08-26 22:45:48.559 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Wi-Fi Ayarlarını Kontrol Etme
+2025-08-26 22:45:48.565 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Ayarlar Arama Fonksiyonu
+2025-08-26 22:45:48.565 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama açılıyor - Cihaz: device1
+2025-08-26 22:45:48.565 [main] INFO  c.appiumautomation.steps.CommonSteps - Cihaz bilgileri: Device{deviceId='device1', deviceName='Emulator-5554', platformVersion='11.0', appiumPort=4723, systemPort=8200, udid='emulator-5554', status='null'}
+2025-08-26 22:45:48.565 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama başarıyla açıldı - Cihaz: device1
+2025-08-26 22:45:48.566 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama açılıyor - Cihaz: device2
+2025-08-26 22:45:48.566 [main] INFO  c.appiumautomation.steps.CommonSteps - Cihaz bilgileri: Device{deviceId='device2', deviceName='Emulator-5556', platformVersion='11.0', appiumPort=4724, systemPort=8201, udid='emulator-5556', status='null'}
+2025-08-26 22:45:48.566 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama başarıyla açıldı - Cihaz: device2
+2025-08-26 22:45:48.567 [main] INFO  c.appiumautomation.steps.CommonSteps - Metin yazılıyor - Cihaz: device1, Alan: Arama, Metin: Wi-Fi
+2025-08-26 22:45:48.590 [main] ERROR c.appiumautomation.steps.CommonSteps - Metin yazılamadı - Cihaz: device1, Alan: Arama, Metin: Wi-Fi
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '24.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [9449f6d4-5908-4485-8a6d-427b5ddaabba, findElement {using=id, value=android:id/search_src_text}]
+Capabilities {appium:appActivity: com.android.settings.Settings, appium:appPackage: com.android.settings, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Emulator-5554, fullReset: false, newCommandTimeout: 60, noReset: true, platformName: ANDROID, platformVersion: 11.0, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 60, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 9449f6d4-5908-4485-8a6d-427b5ddaabba
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.appiumautomation.steps.CommonSteps.findElement(CommonSteps.java:174)
+	at com.appiumautomation.steps.CommonSteps.kullaniciCihazdaAlanaYazar(CommonSteps.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+2025-08-26 22:45:48.593 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Ayarlar Arama Fonksiyonu - Durum: FAILED
+2025-08-26 22:45:48.594 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Ayarlar Arama Fonksiyonu
+2025-08-26 22:45:48.601 [main] INFO  com.appiumautomation.hooks.Hooks - Test başlatılıyor: Ayarlar Menüsünde Gezinme
+2025-08-26 22:45:48.601 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama açılıyor - Cihaz: device1
+2025-08-26 22:45:48.601 [main] INFO  c.appiumautomation.steps.CommonSteps - Cihaz bilgileri: Device{deviceId='device1', deviceName='Emulator-5554', platformVersion='11.0', appiumPort=4723, systemPort=8200, udid='emulator-5554', status='null'}
+2025-08-26 22:45:48.601 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama başarıyla açıldı - Cihaz: device1
+2025-08-26 22:45:48.601 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama açılıyor - Cihaz: device2
+2025-08-26 22:45:48.601 [main] INFO  c.appiumautomation.steps.CommonSteps - Cihaz bilgileri: Device{deviceId='device2', deviceName='Emulator-5556', platformVersion='11.0', appiumPort=4724, systemPort=8201, udid='emulator-5556', status='null'}
+2025-08-26 22:45:48.601 [main] INFO  c.appiumautomation.steps.CommonSteps - Uygulama başarıyla açıldı - Cihaz: device2
+2025-08-26 22:45:48.602 [main] INFO  c.appiumautomation.steps.CommonSteps - Element tıklanıyor - Cihaz: device1, Element: Ayarlar
+2025-08-26 22:45:48.646 [main] ERROR c.appiumautomation.steps.CommonSteps - Element tıklanamadı - Cihaz: device1, Element: Ayarlar
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '24.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [9449f6d4-5908-4485-8a6d-427b5ddaabba, findElement {using=xpath, value=//android.widget.TextView[@text='Ayarlar']}]
+Capabilities {appium:appActivity: com.android.settings.Settings, appium:appPackage: com.android.settings, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Emulator-5554, fullReset: false, newCommandTimeout: 60, noReset: true, platformName: ANDROID, platformVersion: 11.0, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 60, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 9449f6d4-5908-4485-8a6d-427b5ddaabba
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.appiumautomation.steps.CommonSteps.findElement(CommonSteps.java:168)
+	at com.appiumautomation.steps.CommonSteps.kullaniciCihazdaElementiniTiklar(CommonSteps.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.appiumautomation.testrunners.CucumberTestRunner.main(CucumberTestRunner.java:52)
+2025-08-26 22:45:48.650 [main] INFO  com.appiumautomation.hooks.Hooks - Test tamamlandı: Ayarlar Menüsünde Gezinme - Durum: FAILED
+2025-08-26 22:45:48.650 [main] ERROR com.appiumautomation.hooks.Hooks - Test başarısız: Ayarlar Menüsünde Gezinme
+2025-08-26 22:45:48.725 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizleniyor...
+2025-08-26 22:45:48.725 [main] INFO  c.a.core.DriverManager - Tüm driver'lar kapatılıyor...
+2025-08-26 22:45:48.811 [main] INFO  c.a.core.DriverManager - Driver kapatıldı: device1
+2025-08-26 22:45:48.929 [main] INFO  c.a.core.DriverManager - Driver kapatıldı: device2
+2025-08-26 22:45:48.929 [main] INFO  c.a.core.DriverManager - Tüm driver'lar kapatıldı
+2025-08-26 22:45:48.929 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium sunucuları durduruluyor...
+2025-08-26 22:45:48.929 [main] INFO  c.a.utils.AppiumServerManager - Appium sunucusu durduruldu
+2025-08-26 22:45:48.929 [main] INFO  c.a.utils.AppiumServerManager - Appium sunucusu durduruldu
+2025-08-26 22:45:48.942 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium süreçleri sonlandırıldı
+2025-08-26 22:45:48.943 [main] INFO  c.a.utils.AppiumServerManager - Tüm Appium sunucuları durduruldu
+2025-08-26 22:45:48.943 [main] INFO  com.appiumautomation.hooks.Hooks - Test ortamı temizlendi (Emulator'lar açık bırakıldı)
