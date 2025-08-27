@@ -15,6 +15,74 @@ Bu proje, Android cihazlarda çoklu cihaz desteği ile Appium otomasyon testleri
 - ✅ TestNG Runner ile test başlatma
 - ✅ Test modu seçimi (gerçek cihaz / emulator)
 
+## Hızlı Başlangıç (Yeni Makine Kurulumu)
+
+### Gereksinimler
+
+- Java (JDK) 17+ (Öneri: Temurin/OpenJDK)
+- Node.js 18+ ve npm
+- Android Studio + SDK (Emulator/Platform-Tools ve Cmdline Tools)
+- (macOS) Homebrew önerilir
+
+### Kurulum Adımları
+
+1) Depoyu indirin
+```bash
+git clone <repo-url>
+cd AppiumAutomation
+```
+
+2) Ortam değişkenleri (.env)
+Proje kökünde `.env` oluşturun ve yolları işletim sisteminize göre düzenleyin.
+macOS Apple Silicon örneği:
+```bash
+cat > .env << 'EOF'
+ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+ANDROID_HOME=$ANDROID_SDK_ROOT
+JAVA_HOME=/opt/homebrew/opt/openjdk
+PATH=$JAVA_HOME/bin:$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/emulator:/opt/homebrew/share/android-commandlinetools/cmdline-tools/latest/bin:$ANDROID_SDK_ROOT/tools/bin:$PATH
+EOF
+```
+Windows örneği:
+```
+ANDROID_SDK_ROOT=C:\Users\<kullanıcı>\AppData\Local\Android\Sdk
+ANDROID_HOME=%ANDROID_SDK_ROOT%
+JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-17\ (veya Temurin yolu)
+PATH=%JAVA_HOME%\bin;%ANDROID_SDK_ROOT%\platform-tools;%ANDROID_SDK_ROOT%\emulator;%ANDROID_SDK_ROOT%\cmdline-tools\latest\bin;%PATH%
+```
+
+3) SDK lisansları (opsiyonel ama önerilir)
+```bash
+yes | sdkmanager --licenses
+```
+
+4) Proje setup (Appium v3 proje-kapsamında, sürücüler)
+```bash
+chmod +x scripts/setup.sh
+./scripts/setup.sh
+```
+
+5) Appium sunucuları başlatma (iki terminal)
+```bash
+npx appium --base-path /wd/hub --port 4723 | cat
+npx appium --base-path /wd/hub --port 4724 | cat
+```
+
+6) Testleri çalıştırma (Maven Wrapper ile)
+```bash
+./mvnw -q -version | cat
+./mvnw -q test -Dsurefire.suiteXmlFiles=chrome-testng.xml | cat
+```
+
+Notlar:
+- Emülatördeki Chrome sürümü 133 ise, gerekirse Chromedriver kurun:
+```bash
+npm i -g chromedriver@133
+```
+- Alternatif olarak `DriverManager` içinde `chromedriverExecutable` ile tam yol verebilirsiniz.
+
+---
+
 ## Gereksinimler
 
 ### Sistem Gereksinimleri
@@ -26,7 +94,7 @@ Bu proje, Android cihazlarda çoklu cihaz desteği ile Appium otomasyon testleri
 - Android Studio (emulator için)
 - Android SDK Command Line Tools
 
-### Kurulum
+### Kurulum (Eski Yöntem – Referans)
 
 1. **Appium Kurulumu:**
 ```bash

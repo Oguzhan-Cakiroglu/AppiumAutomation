@@ -1,0 +1,15 @@
+{
+  "name": "appium-multi-device-automation",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "postinstall": "appium driver install uiautomator2 || true",
+    "appium:4723": "appium --base-path /wd/hub --port 4723",
+    "appium:4724": "appium --base-path /wd/hub --port 4724"
+  },
+  "dependencies": {
+    "appium": "^3.0.1"
+  }
+}
