@@ -31,7 +31,22 @@ public class EmulatorManager {
         List<String> avdList = new ArrayList<>();
         try {
             String command = AVD_PATH + " list avd";
-            Process process = Runtime.getRuntime().exec(command);
+            ProcessBuilder pb = new ProcessBuilder("sh", "-c", command);
+
+            // Ortam değişkenlerini geçir
+            String sdkRoot = System.getenv().getOrDefault("ANDROID_SDK_ROOT", System.getProperty("user.home") + "/Library/Android/sdk");
+            String androidHome = System.getenv().getOrDefault("ANDROID_HOME", sdkRoot);
+            String javaHome = System.getenv().getOrDefault("JAVA_HOME", "/opt/homebrew/opt/openjdk");
+            String toolsPath = sdkRoot + "/tools/bin";
+            String platformToolsPath = sdkRoot + "/platform-tools";
+            String emulatorPath = sdkRoot + "/emulator";
+            String cmdlineToolsPath = "/opt/homebrew/share/android-commandlinetools/cmdline-tools/latest/bin";
+            pb.environment().put("ANDROID_SDK_ROOT", sdkRoot);
+            pb.environment().put("ANDROID_HOME", androidHome);
+            pb.environment().put("JAVA_HOME", javaHome);
+            pb.environment().put("PATH", javaHome + "/bin:" + platformToolsPath + ":" + emulatorPath + ":" + cmdlineToolsPath + ":" + toolsPath + ":" + pb.environment().getOrDefault("PATH", ""));
+
+            Process process = pb.start();
             
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String line;
@@ -102,6 +117,19 @@ public class EmulatorManager {
             ProcessBuilder processBuilder = new ProcessBuilder();
             processBuilder.command("sh", "-c", emulatorCommand);
             processBuilder.redirectErrorStream(true);
+
+            // Ortam değişkenlerini geçir
+            String sdkRoot2 = System.getenv().getOrDefault("ANDROID_SDK_ROOT", System.getProperty("user.home") + "/Library/Android/sdk");
+            String androidHome2 = System.getenv().getOrDefault("ANDROID_HOME", sdkRoot2);
+            String javaHome2 = System.getenv().getOrDefault("JAVA_HOME", "/opt/homebrew/opt/openjdk");
+            String toolsPath2 = sdkRoot2 + "/tools/bin";
+            String platformToolsPath2 = sdkRoot2 + "/platform-tools";
+            String emulatorPath2 = sdkRoot2 + "/emulator";
+            String cmdlineToolsPath2 = "/opt/homebrew/share/android-commandlinetools/cmdline-tools/latest/bin";
+            processBuilder.environment().put("ANDROID_SDK_ROOT", sdkRoot2);
+            processBuilder.environment().put("ANDROID_HOME", androidHome2);
+            processBuilder.environment().put("JAVA_HOME", javaHome2);
+            processBuilder.environment().put("PATH", javaHome2 + "/bin:" + platformToolsPath2 + ":" + emulatorPath2 + ":" + cmdlineToolsPath2 + ":" + toolsPath2 + ":" + processBuilder.environment().getOrDefault("PATH", ""));
             
             Process process = processBuilder.start();
             emulatorProcesses.add(process);
@@ -131,7 +159,20 @@ public class EmulatorManager {
     private boolean isEmulatorReady(int port) {
         try {
             String command = String.format("adb -s emulator-%d shell getprop sys.boot_completed", port);
-            Process process = Runtime.getRuntime().exec(command);
+            ProcessBuilder pb = new ProcessBuilder("sh", "-c", command);
+            // Ortam değişkenlerini geçir
+            String sdkRoot = System.getenv().getOrDefault("ANDROID_SDK_ROOT", System.getProperty("user.home") + "/Library/Android/sdk");
+            String androidHome = System.getenv().getOrDefault("ANDROID_HOME", sdkRoot);
+            String javaHome = System.getenv().getOrDefault("JAVA_HOME", "/opt/homebrew/opt/openjdk");
+            String toolsPath = sdkRoot + "/tools/bin";
+            String platformToolsPath = sdkRoot + "/platform-tools";
+            String emulatorPath = sdkRoot + "/emulator";
+            String cmdlineToolsPath = "/opt/homebrew/share/android-commandlinetools/cmdline-tools/latest/bin";
+            pb.environment().put("ANDROID_SDK_ROOT", sdkRoot);
+            pb.environment().put("ANDROID_HOME", androidHome);
+            pb.environment().put("JAVA_HOME", javaHome);
+            pb.environment().put("PATH", javaHome + "/bin:" + platformToolsPath + ":" + emulatorPath + ":" + cmdlineToolsPath + ":" + toolsPath + ":" + pb.environment().getOrDefault("PATH", ""));
+            Process process = pb.start();
             int exitCode = process.waitFor();
             
             if (exitCode == 0) {
@@ -183,7 +224,20 @@ public class EmulatorManager {
     private String getEmulatorProperty(int port, String property) {
         try {
             String command = String.format("adb -s emulator-%d shell getprop %s", port, property);
-            Process process = Runtime.getRuntime().exec(command);
+            ProcessBuilder pb = new ProcessBuilder("sh", "-c", command);
+            // Ortam değişkenlerini geçir
+            String sdkRoot = System.getenv().getOrDefault("ANDROID_SDK_ROOT", System.getProperty("user.home") + "/Library/Android/sdk");
+            String androidHome = System.getenv().getOrDefault("ANDROID_HOME", sdkRoot);
+            String javaHome = System.getenv().getOrDefault("JAVA_HOME", "/opt/homebrew/opt/openjdk");
+            String toolsPath = sdkRoot + "/tools/bin";
+            String platformToolsPath = sdkRoot + "/platform-tools";
+            String emulatorPath = sdkRoot + "/emulator";
+            String cmdlineToolsPath = "/opt/homebrew/share/android-commandlinetools/cmdline-tools/latest/bin";
+            pb.environment().put("ANDROID_SDK_ROOT", sdkRoot);
+            pb.environment().put("ANDROID_HOME", androidHome);
+            pb.environment().put("JAVA_HOME", javaHome);
+            pb.environment().put("PATH", javaHome + "/bin:" + platformToolsPath + ":" + emulatorPath + ":" + cmdlineToolsPath + ":" + toolsPath + ":" + pb.environment().getOrDefault("PATH", ""));
+            Process process = pb.start();
             int exitCode = process.waitFor();
             
             if (exitCode == 0) {

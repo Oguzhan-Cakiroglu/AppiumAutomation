@@ -1,45 +1,37 @@
-2025-08-26 19:45:25:978 [Appium] Welcome to Appium v2.19.0 (REV 02947ea4edbdef5fcce9ee57fa289547f4d096c9)
-2025-08-26 19:45:25:980 [Appium] Non-default server args:
-2025-08-26 19:45:25:980 [Appium] { basePath: '/wd/hub', port: 4724 }
-2025-08-26 19:45:25:982 [Appium] The autodetected Appium home path: /Users/oguzhancakiroglu/.appium
-2025-08-26 19:45:25:982 [Appium] Attempting to load driver uiautomator2...
-2025-08-26 19:45:25:983 [Appium] Attempting to load driver xcuitest...
-2025-08-26 19:45:25:983 [Appium] Attempting to load driver safari...
-2025-08-26 19:45:25:985 [Appium] Requiring driver at /Users/oguzhancakiroglu/.appium/node_modules/appium-uiautomator2-driver/build/index.js
-2025-08-26 19:45:25:988 [Appium] Requiring driver at /Users/oguzhancakiroglu/.appium/node_modules/appium-xcuitest-driver/build/index.js
-2025-08-26 19:45:25:988 [Appium] Requiring driver at /Users/oguzhancakiroglu/.appium/node_modules/appium-safari-driver/build/index.js
-2025-08-26 19:45:26:554 [Appium] XCUITestDriver has been successfully loaded in 0.570s
-2025-08-26 19:45:26:672 [Appium] SafariDriver has been successfully loaded in 0.688s
-2025-08-26 19:45:27:159 [Appium] AndroidUiautomator2Driver has been successfully loaded in 1.176s
-2025-08-26 19:45:27:178 [Appium] Appium REST http interface listener started on http://0.0.0.0:4724/wd/hub
-2025-08-26 19:45:27:179 [Appium] You can provide the following URLs in your client code to connect to this server:
+2025-08-27 11:56:28:922 [Appium] Welcome to Appium v3.0.1 (REV 02947ea4edbdef5fcce9ee57fa289547f4d096c9)
+2025-08-27 11:56:28:923 [Appium] Non-default server args:
+2025-08-27 11:56:28:924 [Appium] { basePath: '/wd/hub', port: 4724 }
+2025-08-27 11:56:28:924 [Appium] The autodetected Appium home path: /Users/swt/.appium
+2025-08-27 11:56:28:924 [Appium] Attempting to load driver uiautomator2...
+2025-08-27 11:56:28:925 [Appium] Requiring driver at /Users/swt/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+2025-08-27 11:56:29:261 [Appium] AndroidUiautomator2Driver has been successfully loaded in 0.337s
+2025-08-27 11:56:29:270 [Appium] Appium REST http interface listener started on http://0.0.0.0:4724/wd/hub
+2025-08-27 11:56:29:271 [Appium] You can provide the following URLs in your client code to connect to this server:
 	http://127.0.0.1:4724/wd/hub (only accessible from the same host)
-	http://192.168.1.105:4724/wd/hub
-2025-08-26 19:45:27:179 [Appium] Available drivers:
-2025-08-26 19:45:27:180 [Appium]   - uiautomator2@4.1.0 (automationName 'UiAutomator2')
-2025-08-26 19:45:27:180 [Appium]   - xcuitest@8.3.3 (automationName 'XCUITest')
-2025-08-26 19:45:27:180 [Appium]   - safari@3.5.23 (automationName 'Safari')
-2025-08-26 19:45:27:180 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
-2025-08-26 19:45:38:148 [HTTP] Request idempotency key: 43bf6ba7-8deb-4d6d-af82-d3a3715e703d
-2025-08-26 19:45:38:157 [HTTP] --> POST /wd/hub/session {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:appActivity":"com.android.settings.Settings","appium:appPackage":"com.android.settings","appium:autoGrantPermissions":true,"appium:automationName":"UiAutomator2","appium:deviceName":"Emulator-5556","appium:fullReset":false,"appium:newCommandTimeout":60,"appium:noReset":true,"appium:platformVersion":"11.0","appium:systemPort":8201,"appium:udid":"emulator-5556","platformName":"ANDROID"}}}
-2025-08-26 19:45:38:158 [AppiumDriver@017a] Calling AppiumDriver.createSession() with args: [null,null,{"firstMatch":[{}],"alwaysMatch":{"appium:appActivity":"com.android.settings.Settings","appium:appPackage":"com.android.settings","appium:autoGrantPermissions":true,"appium:automationName":"UiAutomator2","appium:deviceName":"Emulator-5556","appium:fullReset":false,"appium:newCommandTimeout":60,"appium:noReset":true,"appium:platformVersion":"11.0","appium:systemPort":8201,"appium:udid":"emulator-5556","platformName":"ANDROID"}}]
-2025-08-26 19:45:38:159 [AppiumDriver@017a] Event 'newSessionRequested' logged at 1756237538159 (22:45:38 GMT+0300 (GMT+03:00))
-2025-08-26 19:45:38:161 [Appium] Attempting to find matching driver for automationName 'UiAutomator2' and platformName 'ANDROID'
-2025-08-26 19:45:38:162 [Appium] The 'uiautomator2' driver was installed and matched caps.
-2025-08-26 19:45:38:162 [Appium] Will require it at /Users/oguzhancakiroglu/.appium/node_modules/appium-uiautomator2-driver
-2025-08-26 19:45:38:163 [Appium] Requiring driver at /Users/oguzhancakiroglu/.appium/node_modules/appium-uiautomator2-driver/build/index.js
-2025-08-26 19:45:38:163 [AppiumDriver@017a] Appium v2.19.0 creating new AndroidUiautomator2Driver (v4.1.0) session
-2025-08-26 19:45:38:163 [AppiumDriver@017a] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
-2025-08-26 19:45:38:163 [AppiumDriver@017a] Appium's BaseDriver version is 9.18.0
-2025-08-26 19:45:38:163 [AppiumDriver@017a] AndroidUiautomator2Driver's BaseDriver version is 9.18.0
-2025-08-26 19:45:38:166 [38;5;-61m[AndroidUiautomator2Driver@5b09] 
-2025-08-26 19:45:38:166 [38;5;-61m[AndroidUiautomator2Driver@5b09] Creating session with W3C capabilities: {
+	http://10.18.229.63:4724/wd/hub
+2025-08-27 11:56:29:271 [Appium] Available drivers:
+2025-08-27 11:56:29:271 [Appium]   - uiautomator2@5.0.0 (automationName 'UiAutomator2')
+2025-08-27 11:56:29:271 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+2025-08-27 11:56:38:762 [HTTP] Request idempotency key: d593816a-bc39-4563-8e5a-436ced7b7f2c
+2025-08-27 11:56:38:766 [HTTP] --> POST /wd/hub/session {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:autoGrantPermissions":true,"appium:automationName":"UiAutomator2","appium:chromedriverAutodownload":true,"appium:deviceName":"Emulator-5556","appium:fullReset":false,"appium:newCommandTimeout":60,"appium:noReset":true,"appium:platformVersion":"11.0","appium:systemPort":8201,"appium:udid":"emulator-5556","browserName":"Chrome","platformName":"ANDROID"}}}
+2025-08-27 11:56:38:767 [AppiumDriver@29be] Calling AppiumDriver.createSession() with args: [{"firstMatch":[{}],"alwaysMatch":{"appium:autoGrantPermissions":true,"appium:automationName":"UiAutomator2","appium:chromedriverAutodownload":true,"appium:deviceName":"Emulator-5556","appium:fullReset":false,"appium:newCommandTimeout":60,"appium:noReset":true,"appium:platformVersion":"11.0","appium:systemPort":8201,"appium:udid":"emulator-5556","browserName":"Chrome","platformName":"ANDROID"}},{"firstMatch":[{}],"alwaysMatch":{"appium:autoGrantPermissions":true,"appium:automationName":"UiAutomator2","appium:chromedriverAutodownload":true,"appium:deviceName":"Emulator-5556","appium:fullReset":false,"appium:newCommandTimeout":60,"appium:noReset":true,"appium:platformVersion":"11.0","appium:systemPort":8201,"appium:udid":"emulator-5556","browserName":"Chrome","platformName":"ANDROID"}},{"firstMatch":[{}],"alwaysMatch":{"appium:autoGrantPermissions":true,"appium:automationName":"UiAutomator2","appium:chromedriverAutodownload":true,"appium:deviceName":"Emulator-5556","appium:fullReset":false,"appium:newCommand...
+2025-08-27 11:56:38:767 [AppiumDriver@29be] Event 'newSessionRequested' logged at 1756295798767 (14:56:38 GMT+0300 (GMT+03:00))
+2025-08-27 11:56:38:768 [Appium] Attempting to find matching driver for automationName 'UiAutomator2' and platformName 'ANDROID'
+2025-08-27 11:56:38:769 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2025-08-27 11:56:38:769 [Appium] Will require it at /Users/swt/.appium/node_modules/appium-uiautomator2-driver
+2025-08-27 11:56:38:769 [Appium] Requiring driver at /Users/swt/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+2025-08-27 11:56:38:769 [AppiumDriver@29be] Appium v3.0.1 creating new AndroidUiautomator2Driver (v5.0.0) session
+2025-08-27 11:56:38:769 [AppiumDriver@29be] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2025-08-27 11:56:38:769 [AppiumDriver@29be] Appium's BaseDriver version is 10.0.0
+2025-08-27 11:56:38:769 [AppiumDriver@29be] AndroidUiautomator2Driver's BaseDriver version is 10.0.0
+2025-08-27 11:56:38:771 [38;5;-121m[AndroidUiautomator2Driver@c340] 
+2025-08-27 11:56:38:771 [38;5;-121m[AndroidUiautomator2Driver@c340] Creating session with W3C capabilities: {
   "alwaysMatch": {
+    "browserName": "Chrome",
     "platformName": "ANDROID",
-    "appium:appActivity": "com.android.settings.Settings",
-    "appium:appPackage": "com.android.settings",
     "appium:autoGrantPermissions": true,
     "appium:automationName": "UiAutomator2",
+    "appium:chromedriverAutodownload": true,
     "appium:deviceName": "Emulator-5556",
     "appium:fullReset": false,
     "appium:newCommandTimeout": 60,
@@ -52,318 +44,17 @@
     {}
   ]
 }
-2025-08-26 19:45:38:169 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Session created with session id: d9614e29-16ae-4291-bf93-eb4aa80b1939
-2025-08-26 19:45:38:176 [d9614e29][ADB] Found 1 'build-tools' folders under '/Users/oguzhancakiroglu/Library/Android/sdk' (newest first):
-2025-08-26 19:45:38:176 [d9614e29][ADB]     /Users/oguzhancakiroglu/Library/Android/sdk/build-tools/35.0.1
-2025-08-26 19:45:38:176 [d9614e29][ADB] Using 'adb' from '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb'
-2025-08-26 19:45:38:176 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
-2025-08-26 19:45:38:190 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Retrieving device list
-2025-08-26 19:45:38:190 [d9614e29][ADB] Trying to find connected Android devices
-2025-08-26 19:45:38:190 [d9614e29][ADB] Getting connected devices
-2025-08-26 19:45:38:203 [d9614e29][ADB] Connected devices: [{"udid":"emulator-5554","state":"device"},{"udid":"emulator-5556","state":"device"}]
-2025-08-26 19:45:38:203 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Using device: emulator-5556
-2025-08-26 19:45:38:204 [d9614e29][ADB] Using 'adb' from '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb'
-2025-08-26 19:45:38:204 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
-2025-08-26 19:45:38:217 [d9614e29][ADB] Setting device id to emulator-5556
-2025-08-26 19:45:38:217 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Starting 'com.android.settings' directly on the device
-2025-08-26 19:45:38:218 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell getprop ro.build.version.sdk'
-2025-08-26 19:45:38:267 [d9614e29][ADB] Current device property 'ro.build.version.sdk': 35
-2025-08-26 19:45:38:267 [d9614e29][ADB] Getting device platform version
-2025-08-26 19:45:38:267 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell getprop ro.build.version.release'
-2025-08-26 19:45:38:290 [d9614e29][ADB] Current device property 'ro.build.version.release': 15
-2025-08-26 19:45:38:290 [d9614e29][ADB] Device API level: 35
-2025-08-26 19:45:38:290 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Relaxing hidden api policy
-2025-08-26 19:45:38:290 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
-2025-08-26 19:45:38:291 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 wait-for-device'
-2025-08-26 19:45:38:302 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell echo ping'
-2025-08-26 19:45:38:330 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Pushing settings apk to the device...
-2025-08-26 19:45:38:330 [d9614e29][ADB] Getting package info for 'io.appium.settings'
-2025-08-26 19:45:38:330 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell dumpsys package io.appium.settings'
-2025-08-26 19:45:38:388 [d9614e29][ADB] Using 'aapt2' from '/Users/oguzhancakiroglu/Library/Android/sdk/build-tools/35.0.1/aapt2'
-2025-08-26 19:45:38:388 [d9614e29][ADB] Reading package manifest: '/Users/oguzhancakiroglu/Library/Android/sdk/build-tools/35.0.1/aapt2 dump badging /Users/oguzhancakiroglu/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
-2025-08-26 19:45:38:404 [d9614e29][ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('5.14.1' >= '5.14.1')
-2025-08-26 19:45:38:404 [d9614e29][ADB] There is no need to install/upgrade '/Users/oguzhancakiroglu/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
-2025-08-26 19:45:38:405 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell dumpsys activity services io.appium.settings'
-2025-08-26 19:45:38:426 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] io.appium.settings is already running. There is no need to reset its permissions.
-2025-08-26 19:45:38:427 [d9614e29][Logcat] Starting logs capture with command: /Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 logcat -v threadtime
-2025-08-26 19:45:38:452 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Forwarding UiAutomator2 Server port 6790 to local port 8201
-2025-08-26 19:45:38:453 [d9614e29][ADB] Forwarding system: 8201 to device: 6790
-2025-08-26 19:45:38:453 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 forward tcp:8201 tcp:6790'
-2025-08-26 19:45:38:466 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] UIA2Proxy options: {"server":"127.0.0.1","port":8201,"keepAlive":true,"scheme":"http","base":"","reqBasePath":"","sessionId":null,"timeout":240000}
-2025-08-26 19:45:38:466 [d9614e29][ADB] Getting package info for 'io.appium.uiautomator2.server'
-2025-08-26 19:45:38:466 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell dumpsys package io.appium.uiautomator2.server'
-2025-08-26 19:45:38:466 [d9614e29][ADB] Getting install status for io.appium.uiautomator2.server.test
-2025-08-26 19:45:38:466 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] No app capability. Assuming it is already on the device
-2025-08-26 19:45:38:467 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell cmd package list packages'
-2025-08-26 19:45:38:524 [d9614e29][ADB] 'io.appium.uiautomator2.server.test' is installed
-2025-08-26 19:45:38:529 [d9614e29][ADB] Reading package manifest: '/Users/oguzhancakiroglu/Library/Android/sdk/build-tools/35.0.1/aapt2 dump badging /Users/oguzhancakiroglu/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.2.3.apk'
-2025-08-26 19:45:38:548 [d9614e29][ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('7.2.3' >= '7.2.3')
-2025-08-26 19:45:38:549 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Server packages status: [{"installState":"sameVersionInstalled","appPath":"/Users/oguzhancakiroglu/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.2.3.apk","appId":"io.appium.uiautomator2.server"},{"installState":"sameVersionInstalled","appPath":"/Users/oguzhancakiroglu/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk","appId":"io.appium.uiautomator2.server.test"}]
-2025-08-26 19:45:38:549 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Server packages are not going to be (re)installed
-2025-08-26 19:45:38:549 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Waiting up to 30000ms for services to be available
-2025-08-26 19:45:38:549 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell pm list instrumentation'
-2025-08-26 19:45:38:601 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
-2025-08-26 19:45:38:603 [d9614e29][ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
-2025-08-26 19:45:38:603 [d9614e29][ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
-2025-08-26 19:45:38:603 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
-2025-08-26 19:45:38:659 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Performing shallow cleanup of automation leftovers
-2025-08-26 19:45:38:702 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] No obsolete sessions have been detected (socket hang up)
-2025-08-26 19:45:38:702 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell am force-stop io.appium.uiautomator2.server'
-2025-08-26 19:45:38:702 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell am force-stop io.appium.uiautomator2.server.test'
-2025-08-26 19:45:38:762 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Starting UIAutomator2 server 7.2.3
-2025-08-26 19:45:38:762 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Using UIAutomator2 server from '/Users/oguzhancakiroglu/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.2.3.apk' and test from '/Users/oguzhancakiroglu/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
-2025-08-26 19:45:38:762 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Waiting up to 30000ms for UiAutomator2 to be online...
-2025-08-26 19:45:38:762 [d9614e29][ADB] Creating ADB subprocess with args: ["-P","5037","-s","emulator-5556","shell","am","instrument","-w","-e","disableAnalytics","true","io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
-2025-08-26 19:45:38:766 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Matched '/status' to command name 'getStatus'
-2025-08-26 19:45:38:767 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Proxying [GET /status] to [GET http://127.0.0.1:8201/status] with no body
-2025-08-26 19:45:38:788 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] socket hang up
-2025-08-26 19:45:39:790 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Matched '/status' to command name 'getStatus'
-2025-08-26 19:45:39:790 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Proxying [GET /status] to [GET http://127.0.0.1:8201/status] with no body
-2025-08-26 19:45:39:795 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] socket hang up
-2025-08-26 19:45:39:872 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] [Instrumentation] 
-2025-08-26 19:45:40:798 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Matched '/status' to command name 'getStatus'
-2025-08-26 19:45:40:798 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Proxying [GET /status] to [GET http://127.0.0.1:8201/status] with no body
-2025-08-26 19:45:40:804 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] socket hang up
-2025-08-26 19:45:41:807 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Matched '/status' to command name 'getStatus'
-2025-08-26 19:45:41:807 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Proxying [GET /status] to [GET http://127.0.0.1:8201/status] with no body
-2025-08-26 19:45:41:830 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Got response with status 200: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
-2025-08-26 19:45:41:830 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] The initialization of the instrumentation process took 3068ms
-2025-08-26 19:45:41:830 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Matched '/session' to command name 'createSession'
-2025-08-26 19:45:41:830 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Proxying [POST /session] to [POST http://127.0.0.1:8201/session] with body: {"capabilities":{"firstMatch":[{"platformName":"ANDROID","appActivity":"com.android.settings.Settings","appPackage":"com.android.settings","autoGrantPermissions":true,"automationName":"UiAutomator2","deviceName":"emulator-5556","fullReset":false,"newCommandTimeout":60,"noReset":true,"platformVersion":"11.0","systemPort":8201,"udid":"emulator-5556","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"ANDROID","appActivity":"com.android.settings.Settings","appPackage":"com.android.settings","autoGrantPermissions":true,"automationName":"UiAutomator2","deviceName":"Emulator-5556","fullReset":false,"newCommandTimeout":60,"noReset":true,"platformVersion":"11.0","systemPort":8201,"udid":"emulator-5556"},"deviceUDID":"emulator-5556"}],"alwaysMatch":{}}}
-2025-08-26 19:45:41:841 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Got response with status 200: {"sessionId":"cf523bcc-a239-4cb0-996a-8af419c6d4e5","value":{"capabilities":{"firstMatch":[{"platformName":"ANDROID","appActivity":"com.android.settings.Settings","appPackage":"com.android.settings","autoGrantPermissions":true,"automationName":"UiAutomator2","deviceName":"emulator-5556","fullReset":false,"newCommandTimeout":60,"noReset":true,"platformVersion":"11.0","systemPort":8201,"udid":"emulator-5556","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"ANDROID","appActivity":"com.android.settings.Settings","appPackage":"com.android.settings","autoGrantPermissions":true,"automationName":"UiAutomator2","deviceName":"Emulator-5556","fullReset":false,"newCommandTimeout":60,"noReset":true,"platformVersion":"11.0","systemPort":8201,"udid":"emulator-5556"},"deviceUDID":"emulator-5556"}],"alwaysMatch":{}},"sessionId":"cf523bcc-a239-4cb0-996a-8...
-2025-08-26 19:45:41:841 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Determined the downstream protocol as 'W3C'
-2025-08-26 19:45:41:857 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8201/session/cf523bcc-a239-4cb0-996a-8af419c6d4e5/appium/device/pixel_ratio] with no body
-2025-08-26 19:45:41:859 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Matched '/appium/device/system_bars' to command name 'getSystemBars'
-2025-08-26 19:45:41:859 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8201/session/cf523bcc-a239-4cb0-996a-8af419c6d4e5/appium/device/system_bars] with no body
-2025-08-26 19:45:41:863 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Matched '/window/current/size' to command name 'getWindowSize'
-2025-08-26 19:45:41:864 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Proxying [GET /window/current/size] to [GET http://127.0.0.1:8201/session/cf523bcc-a239-4cb0-996a-8af419c6d4e5/window/current/size] with no body
-2025-08-26 19:45:41:865 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8201/session/cf523bcc-a239-4cb0-996a-8af419c6d4e5/appium/device/info] with no body
-2025-08-26 19:45:41:866 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell dumpsys window'
-2025-08-26 19:45:41:866 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell dumpsys power'
-2025-08-26 19:45:41:878 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Got response with status 200: {"sessionId":"cf523bcc-a239-4cb0-996a-8af419c6d4e5","value":2.625}
-2025-08-26 19:45:41:882 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Got response with status 200: {"sessionId":"cf523bcc-a239-4cb0-996a-8af419c6d4e5","value":{"height":2400,"width":1080}}
-2025-08-26 19:45:41:890 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Got response with status 200: {"sessionId":"cf523bcc-a239-4cb0-996a-8af419c6d4e5","value":{"statusBar":63}}
-2025-08-26 19:45:41:932 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Got response with status 200: {"sessionId":"cf523bcc-a239-4cb0-996a-8af419c6d4e5","value":{"androidId":"c81727b88987a66a","apiVersion":"35","bluetooth":{"state":"ON"},"brand":"google","carrierName":"T-Mobile","displayDensity":420,"locale":"en_US","manufacturer":"Google","model":"sdk_gphone64_arm64","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":4300,"linkUpstreamBandwidthKbps":1800,"networkCapabilities":"NET_CAPABILITY_MMS,NET_CAPABILITY_SUPL,NET_CAPABILITY_IA,NET_CAPABILITY_XCAP,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-2147483648,"transportTypes":"TRANSPORT_CELLULAR"},"detailedState":"CONNECTED","extraInfo":"fast.t-mobile.com","isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":10,"subtypeName":"HSPA","type":0,"typeName":"MOBILE"},{"capabilities":{"SSID":null,"linkDownBandwidthKbp...
-2025-08-26 19:45:41:959 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Screen already unlocked, doing nothing
-2025-08-26 19:45:41:959 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Starting 'com.android.settings/com.android.settings.Settings' and waiting for 'com.android.settings/com.android.settings.Settings'
-2025-08-26 19:45:41:959 [d9614e29][ADB] Getting IDs of all 'com.android.settings' processes
-2025-08-26 19:45:41:960 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell 'pgrep --help; echo $?''
-2025-08-26 19:45:41:993 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell pgrep -f \(\[\[:blank:\]\]\|\^\)com\.android\.settings\(:\[a-zA-Z0-9_-\]\+\)\?\(\[\[:blank:\]\]\|\$\)'
-2025-08-26 19:45:42:035 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] 'com.android.settings' is already running and noReset is enabled. Set forceAppLaunch capability to true if the app must be forcefully restarted on session startup.
-2025-08-26 19:45:42:035 [d9614e29][AppiumDriver@017a] New AndroidUiautomator2Driver session created successfully, session d9614e29-16ae-4291-bf93-eb4aa80b1939 added to master session list
-2025-08-26 19:45:42:035 [d9614e29][AppiumDriver@017a] Event 'newSessionStarted' logged at 1756237542035 (22:45:42 GMT+0300 (GMT+03:00))
-2025-08-26 19:45:42:035 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Cached the protocol value 'W3C' for the new session d9614e29-16ae-4291-bf93-eb4aa80b1939
-2025-08-26 19:45:42:036 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Responding to client with driver.createSession() result: {"capabilities":{"platformName":"ANDROID","appActivity":"com.android.settings.Settings","appPackage":"com.android.settings","autoGrantPermissions":true,"automationName":"UiAutomator2","deviceName":"emulator-5556","fullReset":false,"newCommandTimeout":60,"noReset":true,"platformVersion":"15","systemPort":8201,"udid":"emulator-5556","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"ANDROID","appActivity":"com.android.settings.Settings","appPackage":"com.android.settings","autoGrantPermissions":true,"automationName":"UiAutomator2","deviceName":"Emulator-5556","fullReset":false,"newCommandTimeout":60,"noReset":true,"platformVersion":"11.0","systemPort":8201,"udid":"emulator-5556"},"deviceUDID":"emulator-5556","pixelRatio":"2.625","statBarHeight":63,"viewportRect":{"left":0,"top":63,"width":1080,"height":2337},"deviceApiLevel":35,"deviceManufa...
-2025-08-26 19:45:42:037 [d9614e29][HTTP] <-- POST /wd/hub/session 200 3881 ms - 1192 
-2025-08-26 19:45:45:139 [d9614e29][HTTP] --> POST /wd/hub/session/d9614e29-16ae-4291-bf93-eb4aa80b1939/execute/sync {"script":"mobile: activateApp","args":[{"bundleId":"com.android.chrome","appId":"com.android.chrome"}]}
-2025-08-26 19:45:45:142 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Calling AppiumDriver.execute() with args: ["mobile: activateApp",[{"bundleId":"com.android.chrome","appId":"com.android.chrome"}],"d9614e29-16ae-4291-bf93-eb4aa80b1939"]
-2025-08-26 19:45:45:144 [d9614e29][BaseDriver] The following script arguments are not known and will be ignored: bundleId
-2025-08-26 19:45:45:144 [d9614e29][ADB] Activating 'com.android.chrome'
-2025-08-26 19:45:45:144 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell cmd package resolve-activity --brief com.android.chrome'
-2025-08-26 19:45:45:168 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell am start-activity -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000 -n com.android.chrome/com.google.android.apps.chrome.Main'
-2025-08-26 19:45:45:248 [d9614e29][ADB] Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.chrome/com.google.android.apps.chrome.Main }
-2025-08-26 19:45:45:248 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Responding to client with driver.execute() result: null
-2025-08-26 19:45:45:249 [d9614e29][HTTP] <-- POST /wd/hub/session/d9614e29-16ae-4291-bf93-eb4aa80b1939/execute/sync 200 111 ms - 14 
-2025-08-26 19:45:48:813 [d9614e29][HTTP] --> DELETE /wd/hub/session/d9614e29-16ae-4291-bf93-eb4aa80b1939 {}
-2025-08-26 19:45:48:813 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Calling AppiumDriver.deleteSession() with args: ["d9614e29-16ae-4291-bf93-eb4aa80b1939"]
-2025-08-26 19:45:48:813 [d9614e29][AppiumDriver@017a] Event 'quitSessionRequested' logged at 1756237548813 (22:45:48 GMT+0300 (GMT+03:00))
-2025-08-26 19:45:48:813 [d9614e29][AppiumDriver@017a] Removing session d9614e29-16ae-4291-bf93-eb4aa80b1939 from our master session list
-2025-08-26 19:45:48:814 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Deleting UiAutomator2 session
-2025-08-26 19:45:48:814 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Deleting UiAutomator2 server session
-2025-08-26 19:45:48:814 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Proxying [DELETE /] to [DELETE http://127.0.0.1:8201/session/cf523bcc-a239-4cb0-996a-8af419c6d4e5] with no body
-2025-08-26 19:45:48:823 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Got response with status 200: {"sessionId":"cf523bcc-a239-4cb0-996a-8af419c6d4e5","value":null}
-2025-08-26 19:45:48:824 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] [Instrumentation] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
-2025-08-26 19:45:48:824 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] [Instrumentation] The process has exited with code null, signal SIGTERM
-2025-08-26 19:45:48:825 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
-2025-08-26 19:45:48:825 [d9614e29][ADB] Removing forwarded port socket connection: 8201 
-2025-08-26 19:45:48:825 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 forward --remove tcp:8201'
-2025-08-26 19:45:48:842 [d9614e29][38;5;-61m[AndroidUiautomator2Driver@5b09] Restoring hidden api policy to the device default configuration
-2025-08-26 19:45:48:842 [d9614e29][ADB] Running '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
-2025-08-26 19:45:48:922 [d9614e29][Logcat] Stopping logcat capture
-2025-08-26 19:45:48:927 [d9614e29][AppiumDriver@017a] Event 'quitSessionFinished' logged at 1756237548926 (22:45:48 GMT+0300 (GMT+03:00))
-2025-08-26 19:45:48:927 [d9614e29][AppiumDriver@017a] Received response: null
-2025-08-26 19:45:48:927 [d9614e29][AppiumDriver@017a] But deleting session, so not returning
-2025-08-26 19:45:48:927 [d9614e29][AppiumDriver@017a] Responding to client with driver.deleteSession() result: null
-2025-08-26 19:45:48:928 [d9614e29][HTTP] <-- DELETE /wd/hub/session/d9614e29-16ae-4291-bf93-eb4aa80b1939 200 115 ms - 14 
-2025-08-26 19:45:48:945 [Appium] Received SIGTERM - shutting down
-2025-08-26 19:45:48:946 [AppiumDriver@017a] There are no active sessions for cleanup
-2025-08-26 19:45:48:952 uncaughtException: write EPIPE
-Error: write EPIPE
-    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
-    at writeGeneric (node:internal/stream_base_commons:150:3)
-    at Socket._writeGeneric (node:net:971:11)
-    at Socket._write (node:net:983:8)
-    at writeOrBuffer (node:internal/streams/writable:570:12)
-    at _write (node:internal/streams/writable:499:10)
-    at Socket.Writable.write (node:internal/streams/writable:508:10)
-    at Console.log (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:87:23)
-    at Console._write (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/modern.js:103:17)
-    at doWrite (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
-    at writeOrBuffer (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:381:5)
-    at Console.Writable.write (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:302:11)
-    at DerivedLogger.ondata (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:629:20)
-    at DerivedLogger.emit (node:events:519:35)
-    at addChunk (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:279:12)
-    at readableAddChunk (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:262:11)
-    at DerivedLogger.Readable.push (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:228:10)
-    at DerivedLogger.Transform.push (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:132:32)
-    at DerivedLogger._transform (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:314:12)
-    at DerivedLogger.Transform._read (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:166:10)
-    at DerivedLogger.Transform._write (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:155:83)
-    at doWrite (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_writable.js:390:139)
-    at writeOrBuffer (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_writable.js:381:5)
-    at DerivedLogger.Writable.write (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_writable.js:302:11)
-    at DerivedLogger.<computed> [as info] (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/create-logger.js:81:14)
-    at Log.<anonymous> (/opt/homebrew/lib/node_modules/appium/lib/logsink.js:88:65)
-    at Log.emit (node:events:507:28)
-    at Log.log (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/logger/lib/log.ts:259:10)
-    at Log.info (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/logger/lib/log.ts:183:10)
-    at Object.wrappedLogger.<computed> [as info] (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/support/lib/logging.js:72:22)
-    at process.onSignal (/opt/homebrew/lib/node_modules/appium/lib/main.js:452:14)
-    at Object.onceWrapper (node:events:622:26)
-    at process.emit (node:events:519:35)
-    at process.emit (/opt/homebrew/lib/node_modules/appium/node_modules/source-map-support/source-map-support.js:516:21)
-2025-08-26 19:45:48:953 uncaughtException: write EPIPE
-Error: write EPIPE
-    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
-    at writeGeneric (node:internal/stream_base_commons:150:3)
-    at Socket._writeGeneric (node:net:971:11)
-    at Socket._write (node:net:983:8)
-    at writeOrBuffer (node:internal/streams/writable:570:12)
-    at _write (node:internal/streams/writable:499:10)
-    at Socket.Writable.write (node:internal/streams/writable:508:10)
-    at Console.log (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:59:25)
-    at Console._write (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/modern.js:103:17)
-    at doWrite (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
-    at writeOrBuffer (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:381:5)
-    at Console.Writable.write (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:302:11)
-    at DerivedLogger.ondata (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:629:20)
-    at DerivedLogger.emit (node:events:519:35)
-    at addChunk (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:279:12)
-    at readableAddChunk (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:262:11)
-    at DerivedLogger.Readable.push (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:228:10)
-    at DerivedLogger.Transform.push (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:132:32)
-    at DerivedLogger._transform (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:314:12)
-    at DerivedLogger.Transform._read (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:166:10)
-    at DerivedLogger.Transform._write (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:155:83)
-    at doWrite (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_writable.js:390:139)
-    at writeOrBuffer (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_writable.js:381:5)
-    at DerivedLogger.Writable.write (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_writable.js:302:11)
-    at DerivedLogger.log (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:216:12)
-    at ExceptionHandler._uncaughtException (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/exception-handler.js:220:17)
-    at process.emit (node:events:507:28)
-    at process.emit (/opt/homebrew/lib/node_modules/appium/node_modules/source-map-support/source-map-support.js:516:21)
-    at processEmit (/opt/homebrew/lib/node_modules/appium/node_modules/lockfile/node_modules/signal-exit/index.js:199:34)
-    at process.emit (/Users/oguzhancakiroglu/.appium/node_modules/appium-xcuitest-driver/node_modules/source-map-support/source-map-support.js:516:21)
-    at processEmit (/Users/oguzhancakiroglu/.appium/node_modules/appium-xcuitest-driver/node_modules/signal-exit/index.js:199:34)
-    at process.emit (/Users/oguzhancakiroglu/.appium/node_modules/appium-safari-driver/node_modules/source-map-support/source-map-support.js:516:21)
-    at process.emit (/Users/oguzhancakiroglu/.appium/node_modules/appium-uiautomator2-driver/node_modules/source-map-support/source-map-support.js:516:21)
-    at processEmit [as emit] (/Users/oguzhancakiroglu/.appium/node_modules/appium-uiautomator2-driver/node_modules/signal-exit/index.js:199:34)
-2025-08-26 19:45:48:953 uncaughtException: write EPIPE
-Error: write EPIPE
-    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
-    at writeGeneric (node:internal/stream_base_commons:150:3)
-    at Socket._writeGeneric (node:net:971:11)
-    at Socket._write (node:net:983:8)
-    at writeOrBuffer (node:internal/streams/writable:570:12)
-    at _write (node:internal/streams/writable:499:10)
-    at Socket.Writable.write (node:internal/streams/writable:508:10)
-    at Console.log (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:59:25)
-    at Console._write (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/modern.js:103:17)
-    at doWrite (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
-    at writeOrBuffer (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:381:5)
-    at Console.Writable.write (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:302:11)
-    at DerivedLogger.ondata (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:629:20)
-    at DerivedLogger.emit (node:events:519:35)
-    at addChunk (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:279:12)
-    at readableAddChunk (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:262:11)
-    at DerivedLogger.Readable.push (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:228:10)
-    at DerivedLogger.Transform.push (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:132:32)
-    at DerivedLogger._transform (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:314:12)
-    at DerivedLogger.Transform._read (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:166:10)
-    at DerivedLogger.Transform._write (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:155:83)
-    at doWrite (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_writable.js:390:139)
-    at writeOrBuffer (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_writable.js:381:5)
-    at DerivedLogger.Writable.write (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_writable.js:302:11)
-    at DerivedLogger.log (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:216:12)
-    at ExceptionHandler._uncaughtException (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/exception-handler.js:220:17)
-    at process.emit (node:events:507:28)
-    at process.emit (/opt/homebrew/lib/node_modules/appium/node_modules/source-map-support/source-map-support.js:516:21)
-    at processEmit (/opt/homebrew/lib/node_modules/appium/node_modules/lockfile/node_modules/signal-exit/index.js:199:34)
-    at process.emit (/Users/oguzhancakiroglu/.appium/node_modules/appium-xcuitest-driver/node_modules/source-map-support/source-map-support.js:516:21)
-    at processEmit (/Users/oguzhancakiroglu/.appium/node_modules/appium-xcuitest-driver/node_modules/signal-exit/index.js:199:34)
-    at process.emit (/Users/oguzhancakiroglu/.appium/node_modules/appium-safari-driver/node_modules/source-map-support/source-map-support.js:516:21)
-    at process.emit (/Users/oguzhancakiroglu/.appium/node_modules/appium-uiautomator2-driver/node_modules/source-map-support/source-map-support.js:516:21)
-    at processEmit [as emit] (/Users/oguzhancakiroglu/.appium/node_modules/appium-uiautomator2-driver/node_modules/signal-exit/index.js:199:34)
-2025-08-26 19:45:48:955 uncaughtException: write EPIPE
-Error: write EPIPE
-    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
-    at writeGeneric (node:internal/stream_base_commons:150:3)
-    at Socket._writeGeneric (node:net:971:11)
-    at Socket._write (node:net:983:8)
-    at writeOrBuffer (node:internal/streams/writable:570:12)
-    at _write (node:internal/streams/writable:499:10)
-    at Socket.Writable.write (node:internal/streams/writable:508:10)
-    at Console.log (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:59:25)
-    at Console._write (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/modern.js:103:17)
-    at doWrite (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
-    at writeOrBuffer (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:381:5)
-    at Console.Writable.write (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:302:11)
-    at DerivedLogger.ondata (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:629:20)
-    at DerivedLogger.emit (node:events:519:35)
-    at addChunk (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:279:12)
-    at readableAddChunk (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:262:11)
-    at DerivedLogger.Readable.push (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:228:10)
-    at DerivedLogger.Transform.push (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:132:32)
-    at DerivedLogger._transform (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:314:12)
-    at DerivedLogger.Transform._read (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:166:10)
-    at DerivedLogger.Transform._write (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:155:83)
-    at doWrite (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_writable.js:390:139)
-    at writeOrBuffer (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_writable.js:381:5)
-    at DerivedLogger.Writable.write (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_writable.js:302:11)
-    at DerivedLogger.log (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:216:12)
-    at ExceptionHandler._uncaughtException (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/exception-handler.js:220:17)
-    at process.emit (node:events:507:28)
-    at process.emit (/opt/homebrew/lib/node_modules/appium/node_modules/source-map-support/source-map-support.js:516:21)
-    at processEmit (/opt/homebrew/lib/node_modules/appium/node_modules/lockfile/node_modules/signal-exit/index.js:199:34)
-    at process.emit (/Users/oguzhancakiroglu/.appium/node_modules/appium-xcuitest-driver/node_modules/source-map-support/source-map-support.js:516:21)
-    at processEmit (/Users/oguzhancakiroglu/.appium/node_modules/appium-xcuitest-driver/node_modules/signal-exit/index.js:199:34)
-    at process.emit (/Users/oguzhancakiroglu/.appium/node_modules/appium-safari-driver/node_modules/source-map-support/source-map-support.js:516:21)
-    at process.emit (/Users/oguzhancakiroglu/.appium/node_modules/appium-uiautomator2-driver/node_modules/source-map-support/source-map-support.js:516:21)
-    at processEmit [as emit] (/Users/oguzhancakiroglu/.appium/node_modules/appium-uiautomator2-driver/node_modules/signal-exit/index.js:199:34)
-2025-08-26 19:45:48:957 uncaughtException: write EPIPE
-Error: write EPIPE
-    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
-    at writeGeneric (node:internal/stream_base_commons:150:3)
-    at Socket._writeGeneric (node:net:971:11)
-    at Socket._write (node:net:983:8)
-    at writeOrBuffer (node:internal/streams/writable:570:12)
-    at _write (node:internal/streams/writable:499:10)
-    at Socket.Writable.write (node:internal/streams/writable:508:10)
-    at Console.log (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:59:25)
-    at Console._write (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/modern.js:103:17)
-    at doWrite (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
-    at writeOrBuffer (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:381:5)
-    at Console.Writable.write (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:302:11)
-    at DerivedLogger.ondata (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:629:20)
-    at DerivedLogger.emit (node:events:519:35)
-    at addChunk (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:279:12)
-    at readableAddChunk (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:262:11)
-    at DerivedLogger.Readable.push (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:228:10)
-    at DerivedLogger.Transform.push (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:132:32)
-    at DerivedLogger._transform (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:314:12)
-    at DerivedLogger.Transform._read (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:166:10)
-    at DerivedLogger.Transform._write (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:155:83)
-    at doWrite (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_writable.js:390:139)
-    at writeOrBuffer (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_writable.js:381:5)
-    at DerivedLogger.Writable.write (/opt/homebrew/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_writable.js:302:11)
-    at DerivedLogger.log (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:216:12)
-    at ExceptionHandler._uncaughtException (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/exception-handler.js:220:17)
-    at process.emit (node:events:507:28)
-    at process.emit (/opt/homebrew/lib/node_modules/appium/node_modules/source-map-support/source-map-support.js:516:21)
-    at processEmit (/opt/homebrew/lib/node_modules/appium/node_modules/lockfile/node_modules/signal-exit/index.js:199:34)
-    at process.emit (/Users/oguzhancakiroglu/.appium/node_modules/appium-xcuitest-driver/node_modules/source-map-support/source-map-support.js:516:21)
-    at processEmit (/Users/oguzhancakiroglu/.appium/node_modules/appium-xcuitest-driver/node_modules/signal-exit/index.js:199:34)
-    at process.emit (/Users/oguzhancakiroglu/.appium/node_modules/appium-safari-driver/node_modules/source-map-support/source-map-support.js:516:21)
-    at process.emit (/Users/oguzhancakiroglu/.appium/node_modules/appium-uiautomator2-driver/node_modules/source-map-support/source-map-support.js:516:21)
-    at processEmit [as emit] (/Users/oguzhancakiroglu/.appium/node_modules/appium-uiautomator2-driver/node_modules/signal-exit/index.js:199:34)
+2025-08-27 11:56:38:773 [38;5;-121m[AndroidUiautomator2Driver@c340] The following provided capabilities were not recognized by this driver:
+2025-08-27 11:56:38:773 [38;5;-121m[AndroidUiautomator2Driver@c340]   chromedriverAutodownload
+2025-08-27 11:56:38:773 [4dc1f9f9][38;5;-121m[AndroidUiautomator2Driver@c340] Session created with session id: 4dc1f9f9-a58a-4132-83ce-fd40a81e214a
+2025-08-27 11:56:38:775 [4dc1f9f9][38;5;-121m[AndroidUiautomator2Driver@c340] Deleting UiAutomator2 session
+2025-08-27 11:56:38:775 [4dc1f9f9][AppiumDriver@29be] Event 'newSessionStarted' logged at 1756295798775 (14:56:38 GMT+0300 (GMT+03:00))
+2025-08-27 11:56:38:786 [4dc1f9f9][AppiumDriver@29be] Encountered internal error running command: Error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details
+    at requireSdkRoot (/Users/swt/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/lib/helpers.js:77:11)
+    at ADB.createADB (/Users/swt/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/lib/adb.ts:131:39)
+    at createBaseADB (/Users/swt/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/device/utils.js:137:20)
+    at AndroidUiautomator2Driver.getDeviceInfoFromCaps (/Users/swt/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/device/common.js:29:34)
+    at AndroidUiautomator2Driver.createSession (/Users/swt/.appium/node_modules/appium-uiautomator2-driver/lib/driver.ts:360:41)
+    at AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/lib/appium.js:360:35)
+2025-08-27 11:56:38:791 [4dc1f9f9][HTTP] <-- POST /wd/hub/session 500 24 ms - 1674 
+2025-08-27 11:56:38:853 [Appium] Received SIGTERM - shutting down

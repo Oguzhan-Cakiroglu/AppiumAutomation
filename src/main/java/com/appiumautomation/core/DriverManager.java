@@ -62,8 +62,16 @@ public class DriverManager {
                     .setFullReset(false)
                     .setAutoGrantPermissions(true)
                     .setNewCommandTimeout(Duration.ofSeconds(60))
-                    .setAppPackage("com.android.settings")
-                    .setAppActivity("com.android.settings.Settings");
+                    // Chrome tarayıcı testi için tarayıcı oturumu başlat
+                    ;
+
+            // Selenium/Appium istemcisinde tarayıcı başlatmak için browserName capability'sini ekle
+            options.setCapability("browserName", "Chrome");
+            
+            // Chromedriver path: use global npm bin directory where chromedriver binary resides
+            String npmPrefix = System.getenv().getOrDefault("npm_config_prefix", "/opt/homebrew");
+            String chromeDriverBinDir = npmPrefix + "/lib/node_modules/chromedriver/lib/chromedriver";
+            options.setCapability("chromedriverExecutableDir", chromeDriverBinDir);
 
             String appiumUrl = String.format("http://localhost:%d/wd/hub", device.getAppiumPort());
             URL url = new URL(appiumUrl);

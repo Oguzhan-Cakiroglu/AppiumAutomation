@@ -1,42 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="23.842" tests="4" skipped="0" failures="4" errors="0">
-<testcase classname="Chrome Browser Test" name="Chrome'da Google'a Gitme" time="23.349">
-<failure type="org.openqa.selenium.WebDriverException" message="An unknown server-side error occurred while processing the command. Original error: Error attempting to start URI. Original error: Error: Error executing adbExec. Original error: 'Command '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start -W -a android.intent.action.VIEW -d https\://google.com com.android.settings' exited with code 1'; Command output: Starting: Intent { act=android.intent.action.VIEW dat=https://google.com/... pkg=com.android.settings }
-Error: Activity not started, unable to resolve Intent { act=android.intent.action.VIEW dat=https://google.com/... flg=0x10000000 pkg=com.android.settings }
-
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '24.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [9449f6d4-5908-4485-8a6d-427b5ddaabba, get {url=https://google.com}]
-Capabilities {appium:appActivity: com.android.settings.Settings, appium:appPackage: com.android.settings, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Emulator-5554, fullReset: false, newCommandTimeout: 60, noReset: true, platformName: ANDROID, platformVersion: 11.0, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 60, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 9449f6d4-5908-4485-8a6d-427b5ddaabba">
-<![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error attempting to start URI. Original error: Error: Error executing adbExec. Original error: 'Command '/Users/oguzhancakiroglu/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start -W -a android.intent.action.VIEW -d https\://google.com com.android.settings' exited with code 1'; Command output: Starting: Intent { act=android.intent.action.VIEW dat=https://google.com/... pkg=com.android.settings }
-Error: Activity not started, unable to resolve Intent { act=android.intent.action.VIEW dat=https://google.com/... flg=0x10000000 pkg=com.android.settings }
-
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '24.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [9449f6d4-5908-4485-8a6d-427b5ddaabba, get {url=https://google.com}]
-Capabilities {appium:appActivity: com.android.settings.Settings, appium:appPackage: com.android.settings, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Emulator-5554, fullReset: false, newCommandTimeout: 60, noReset: true, platformName: ANDROID, platformVersion: 11.0, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 60, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 9449f6d4-5908-4485-8a6d-427b5ddaabba
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.appiumautomation.steps.ChromeSteps.kullaniciCihazdaAdreseGider(ChromeSteps.java:59)
-	at ✽.kullanıcı "device1" cihazında "google.com" adresine gider(file:///Users/oguzhancakiroglu/Documents/git/AppiumAutomation/src/test/resources/features/chrome_test.feature:11)
+<testsuite name="Cucumber" time="48.553" tests="4" skipped="0" failures="4" errors="0">
+<testcase classname="Chrome Browser Test" name="Chrome'da Google'a Gitme" time="48.454">
+<failure type="java.lang.RuntimeException" message="Driver bulunamadı: device1">
+<![CDATA[java.lang.RuntimeException: Driver bulunamadı: device1
+	at com.appiumautomation.steps.ChromeSteps.kullaniciCihazdaChromuAcar(ChromeSteps.java:27)
+	at ✽.kullanıcı "device1" cihazında Chrome'u açar(file:///Users/swt/Desktop/git/AppiumAutomation/src/test/resources/features/chrome_test.feature:9)
 ]]>
 </failure>
 <system-out><![CDATA[
-Given kullanıcı "device1" cihazında Chrome'u açar...........................passed
-And kullanıcı "device2" cihazında Chrome'u açar.............................passed
-When kullanıcı "device1" cihazında "google.com" adresine gider..............failed
+Given kullanıcı "device1" cihazında Chrome'u açar...........................failed
+And kullanıcı "device2" cihazında Chrome'u açar.............................skipped
+When kullanıcı "device1" cihazında "google.com" adresine gider..............skipped
 And kullanıcı "device2" cihazında "google.com" adresine gider...............skipped
 Then kullanıcı "device1" cihazında "Google" başlığını görür.................skipped
 And kullanıcı "device2" cihazında "Google" başlığını görür..................skipped
@@ -46,45 +20,17 @@ Then kullanıcı "device1" cihazında arama sonuçlarını görür..............
 And kullanıcı "device2" cihazında arama sonuçlarını görür...................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Android Ayarlar Uygulaması Testleri" name="Wi-Fi Ayarlarını Kontrol Etme" time="0.236">
-<failure type="org.openqa.selenium.NoSuchElementException" message="An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '24.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [9449f6d4-5908-4485-8a6d-427b5ddaabba, findElement {using=xpath, value=//*[@text='Wi-Fi']}]
-Capabilities {appium:appActivity: com.android.settings.Settings, appium:appPackage: com.android.settings, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Emulator-5554, fullReset: false, newCommandTimeout: 60, noReset: true, platformName: ANDROID, platformVersion: 11.0, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 60, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 9449f6d4-5908-4485-8a6d-427b5ddaabba">
-<![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '24.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [9449f6d4-5908-4485-8a6d-427b5ddaabba, findElement {using=xpath, value=//*[@text='Wi-Fi']}]
-Capabilities {appium:appActivity: com.android.settings.Settings, appium:appPackage: com.android.settings, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Emulator-5554, fullReset: false, newCommandTimeout: 60, noReset: true, platformName: ANDROID, platformVersion: 11.0, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 60, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 9449f6d4-5908-4485-8a6d-427b5ddaabba
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at com.appiumautomation.steps.CommonSteps.findElement(CommonSteps.java:177)
-	at com.appiumautomation.steps.CommonSteps.kullaniciCihazdaElementiniTiklar(CommonSteps.java:48)
-	at ✽.kullanıcı "device1" cihazında "Wi-Fi" elementini tıklar(file:///Users/oguzhancakiroglu/Documents/git/AppiumAutomation/src/test/resources/features/settings_test.feature:13)
+<testcase classname="Android Ayarlar Uygulaması Testleri" name="Wi-Fi Ayarlarını Kontrol Etme" time="0.002">
+<failure type="java.lang.RuntimeException" message="Driver bulunamadı: device1">
+<![CDATA[java.lang.RuntimeException: Driver bulunamadı: device1
+	at com.appiumautomation.steps.CommonSteps.kullaniciCihazdaUygulamayiAcar(CommonSteps.java:28)
+	at ✽.kullanıcı "device1" cihazında uygulamayı açar(file:///Users/swt/Desktop/git/AppiumAutomation/src/test/resources/features/settings_test.feature:6)
 ]]>
 </failure>
 <system-out><![CDATA[
-Given kullanıcı "device1" cihazında uygulamayı açar.........................passed
-And kullanıcı "device2" cihazında uygulamayı açar...........................passed
-When kullanıcı "device1" cihazında "Wi-Fi" elementini tıklar................failed
+Given kullanıcı "device1" cihazında uygulamayı açar.........................failed
+And kullanıcı "device2" cihazında uygulamayı açar...........................skipped
+When kullanıcı "device1" cihazında "Wi-Fi" elementini tıklar................skipped
 And kullanıcı "device2" cihazında "Wi-Fi" elementini tıklar.................skipped
 Then kullanıcı "device1" cihazında "Wi-Fi" elementinin görünür olduğunu doğrular.skipped
 And kullanıcı "device2" cihazında "Wi-Fi" elementinin görünür olduğunu doğrular.skipped
@@ -92,45 +38,17 @@ When kullanıcı "device1" cihazında geri tuşuna basar........................
 And kullanıcı "device2" cihazında geri tuşuna basar.........................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Android Ayarlar Uygulaması Testleri" name="Ayarlar Arama Fonksiyonu" time="0.028">
-<failure type="org.openqa.selenium.NoSuchElementException" message="An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '24.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [9449f6d4-5908-4485-8a6d-427b5ddaabba, findElement {using=id, value=android:id/search_src_text}]
-Capabilities {appium:appActivity: com.android.settings.Settings, appium:appPackage: com.android.settings, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Emulator-5554, fullReset: false, newCommandTimeout: 60, noReset: true, platformName: ANDROID, platformVersion: 11.0, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 60, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 9449f6d4-5908-4485-8a6d-427b5ddaabba">
-<![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '24.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [9449f6d4-5908-4485-8a6d-427b5ddaabba, findElement {using=id, value=android:id/search_src_text}]
-Capabilities {appium:appActivity: com.android.settings.Settings, appium:appPackage: com.android.settings, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Emulator-5554, fullReset: false, newCommandTimeout: 60, noReset: true, platformName: ANDROID, platformVersion: 11.0, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 60, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 9449f6d4-5908-4485-8a6d-427b5ddaabba
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at com.appiumautomation.steps.CommonSteps.findElement(CommonSteps.java:174)
-	at com.appiumautomation.steps.CommonSteps.kullaniciCihazdaAlanaYazar(CommonSteps.java:67)
-	at ✽.kullanıcı "device1" cihazında "Arama" alanına "Wi-Fi" yazar(file:///Users/oguzhancakiroglu/Documents/git/AppiumAutomation/src/test/resources/features/settings_test.feature:24)
+<testcase classname="Android Ayarlar Uygulaması Testleri" name="Ayarlar Arama Fonksiyonu" time="0.002">
+<failure type="java.lang.RuntimeException" message="Driver bulunamadı: device1">
+<![CDATA[java.lang.RuntimeException: Driver bulunamadı: device1
+	at com.appiumautomation.steps.CommonSteps.kullaniciCihazdaUygulamayiAcar(CommonSteps.java:28)
+	at ✽.kullanıcı "device1" cihazında uygulamayı açar(file:///Users/swt/Desktop/git/AppiumAutomation/src/test/resources/features/settings_test.feature:6)
 ]]>
 </failure>
 <system-out><![CDATA[
-Given kullanıcı "device1" cihazında uygulamayı açar.........................passed
-And kullanıcı "device2" cihazında uygulamayı açar...........................passed
-When kullanıcı "device1" cihazında "Arama" alanına "Wi-Fi" yazar............failed
+Given kullanıcı "device1" cihazında uygulamayı açar.........................failed
+And kullanıcı "device2" cihazında uygulamayı açar...........................skipped
+When kullanıcı "device1" cihazında "Arama" alanına "Wi-Fi" yazar............skipped
 And kullanıcı "device2" cihazında "Arama" alanına "Bluetooth" yazar.........skipped
 Then kullanıcı "device1" cihazında "Wi-Fi" metninin görünür olduğunu doğrular.skipped
 And kullanıcı "device2" cihazında "Bluetooth" metninin görünür olduğunu doğrular.skipped
@@ -138,45 +56,17 @@ When kullanıcı "device1" cihazında geri tuşuna basar........................
 And kullanıcı "device2" cihazında geri tuşuna basar.........................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Android Ayarlar Uygulaması Testleri" name="Ayarlar Menüsünde Gezinme" time="0.05">
-<failure type="org.openqa.selenium.NoSuchElementException" message="An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '24.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [9449f6d4-5908-4485-8a6d-427b5ddaabba, findElement {using=xpath, value=//android.widget.TextView[@text='Ayarlar']}]
-Capabilities {appium:appActivity: com.android.settings.Settings, appium:appPackage: com.android.settings, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Emulator-5554, fullReset: false, newCommandTimeout: 60, noReset: true, platformName: ANDROID, platformVersion: 11.0, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 60, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 9449f6d4-5908-4485-8a6d-427b5ddaabba">
-<![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '24.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [9449f6d4-5908-4485-8a6d-427b5ddaabba, findElement {using=xpath, value=//android.widget.TextView[@text='Ayarlar']}]
-Capabilities {appium:appActivity: com.android.settings.Settings, appium:appPackage: com.android.settings, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Emulator-5554, fullReset: false, newCommandTimeout: 60, noReset: true, platformName: ANDROID, platformVersion: 11.0, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 60, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 9449f6d4-5908-4485-8a6d-427b5ddaabba
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at com.appiumautomation.steps.CommonSteps.findElement(CommonSteps.java:168)
-	at com.appiumautomation.steps.CommonSteps.kullaniciCihazdaElementiniTiklar(CommonSteps.java:48)
-	at ✽.kullanıcı "device1" cihazında "Ayarlar" elementini tıklar(file:///Users/oguzhancakiroglu/Documents/git/AppiumAutomation/src/test/resources/features/settings_test.feature:35)
+<testcase classname="Android Ayarlar Uygulaması Testleri" name="Ayarlar Menüsünde Gezinme" time="0.001">
+<failure type="java.lang.RuntimeException" message="Driver bulunamadı: device1">
+<![CDATA[java.lang.RuntimeException: Driver bulunamadı: device1
+	at com.appiumautomation.steps.CommonSteps.kullaniciCihazdaUygulamayiAcar(CommonSteps.java:28)
+	at ✽.kullanıcı "device1" cihazında uygulamayı açar(file:///Users/swt/Desktop/git/AppiumAutomation/src/test/resources/features/settings_test.feature:6)
 ]]>
 </failure>
 <system-out><![CDATA[
-Given kullanıcı "device1" cihazında uygulamayı açar.........................passed
-And kullanıcı "device2" cihazında uygulamayı açar...........................passed
-When kullanıcı "device1" cihazında "Ayarlar" elementini tıklar..............failed
+Given kullanıcı "device1" cihazında uygulamayı açar.........................failed
+And kullanıcı "device2" cihazında uygulamayı açar...........................skipped
+When kullanıcı "device1" cihazında "Ayarlar" elementini tıklar..............skipped
 And kullanıcı "device2" cihazında "Ayarlar" elementini tıklar...............skipped
 Then kullanıcı "device1" cihazında "Ayarlar" elementinin görünür olduğunu doğrular.skipped
 And kullanıcı "device2" cihazında "Ayarlar" elementinin görünür olduğunu doğrular.skipped

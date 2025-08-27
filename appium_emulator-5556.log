@@ -1,0 +1,232 @@
+2025-08-27 12:37:47:254 [Appium] Welcome to Appium v3.0.1 (REV 02947ea4edbdef5fcce9ee57fa289547f4d096c9)
+2025-08-27 12:37:47:255 [Appium] Non-default server args:
+2025-08-27 12:37:47:255 [Appium] { basePath: '/wd/hub', port: 4724 }
+2025-08-27 12:37:47:256 [Appium] The autodetected Appium home path: /Users/swt/.appium
+2025-08-27 12:37:47:256 [Appium] Attempting to load driver uiautomator2...
+2025-08-27 12:37:47:257 [Appium] Requiring driver at /Users/swt/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+2025-08-27 12:37:47:608 [Appium] AndroidUiautomator2Driver has been successfully loaded in 0.351s
+2025-08-27 12:37:47:617 [Appium] Appium REST http interface listener started on http://0.0.0.0:4724/wd/hub
+2025-08-27 12:37:47:617 [Appium] You can provide the following URLs in your client code to connect to this server:
+	http://127.0.0.1:4724/wd/hub (only accessible from the same host)
+	http://10.18.229.63:4724/wd/hub
+2025-08-27 12:37:47:617 [Appium] Available drivers:
+2025-08-27 12:37:47:617 [Appium]   - uiautomator2@5.0.0 (automationName 'UiAutomator2')
+2025-08-27 12:37:47:617 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+2025-08-27 12:38:00:680 [HTTP] Request idempotency key: ef1bd44f-6513-4bdf-b0b9-e42961f3b789
+2025-08-27 12:38:00:684 [HTTP] --> POST /wd/hub/session {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:autoGrantPermissions":true,"appium:automationName":"UiAutomator2","appium:chromedriverExecutableDir":"/opt/homebrew/lib/node_modules/chromedriver/lib/chromedriver","appium:deviceName":"sdk_gphone64_arm64","appium:fullReset":false,"appium:newCommandTimeout":60,"appium:noReset":true,"appium:platformVersion":"16","appium:systemPort":8201,"appium:udid":"emulator-5556","browserName":"Chrome","platformName":"ANDROID"}}}
+2025-08-27 12:38:00:685 [AppiumDriver@afde] Calling AppiumDriver.createSession() with args: [{"firstMatch":[{}],"alwaysMatch":{"appium:autoGrantPermissions":true,"appium:automationName":"UiAutomator2","appium:chromedriverExecutableDir":"/opt/homebrew/lib/node_modules/chromedriver/lib/chromedriver","appium:deviceName":"sdk_gphone64_arm64","appium:fullReset":false,"appium:newCommandTimeout":60,"appium:noReset":true,"appium:platformVersion":"16","appium:systemPort":8201,"appium:udid":"emulator-5556","browserName":"Chrome","platformName":"ANDROID"}},{"firstMatch":[{}],"alwaysMatch":{"appium:autoGrantPermissions":true,"appium:automationName":"UiAutomator2","appium:chromedriverExecutableDir":"/opt/homebrew/lib/node_modules/chromedriver/lib/chromedriver","appium:deviceName":"sdk_gphone64_arm64","appium:fullReset":false,"appium:newCommandTimeout":60,"appium:noReset":true,"appium:platformVersion":"16","appium:systemPort":8201,"appium:udid":"emulator-5556","browserName":"Chrome","platformName":"ANDROID"}},{"firstMatch":[{}],"alwaysMatch":{"appium:autoGrantPermissions":true,"appium:automationName":"UiAutoma...
+2025-08-27 12:38:00:685 [AppiumDriver@afde] Event 'newSessionRequested' logged at 1756298280685 (15:38:00 GMT+0300 (GMT+03:00))
+2025-08-27 12:38:00:686 [Appium] Attempting to find matching driver for automationName 'UiAutomator2' and platformName 'ANDROID'
+2025-08-27 12:38:00:686 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2025-08-27 12:38:00:686 [Appium] Will require it at /Users/swt/.appium/node_modules/appium-uiautomator2-driver
+2025-08-27 12:38:00:687 [Appium] Requiring driver at /Users/swt/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+2025-08-27 12:38:00:687 [AppiumDriver@afde] Appium v3.0.1 creating new AndroidUiautomator2Driver (v5.0.0) session
+2025-08-27 12:38:00:687 [AppiumDriver@afde] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2025-08-27 12:38:00:687 [AppiumDriver@afde] Appium's BaseDriver version is 10.0.0
+2025-08-27 12:38:00:687 [AppiumDriver@afde] AndroidUiautomator2Driver's BaseDriver version is 10.0.0
+2025-08-27 12:38:00:689 [38;5;-125m[AndroidUiautomator2Driver@039d] 
+2025-08-27 12:38:00:689 [38;5;-125m[AndroidUiautomator2Driver@039d] Creating session with W3C capabilities: {
+  "alwaysMatch": {
+    "browserName": "Chrome",
+    "platformName": "ANDROID",
+    "appium:autoGrantPermissions": true,
+    "appium:automationName": "UiAutomator2",
+    "appium:chromedriverExecutableDir": "/opt/homebrew/lib/node_modules/chromedriver/lib/chromedriver",
+    "appium:deviceName": "sdk_gphone64_arm64",
+    "appium:fullReset": false,
+    "appium:newCommandTimeout": 60,
+    "appium:noReset": true,
+    "appium:platformVersion": "16",
+    "appium:systemPort": 8201,
+    "appium:udid": "emulator-5556"
+  },
+  "firstMatch": [
+    {}
+  ]
+}
+2025-08-27 12:38:00:692 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Session created with session id: fa302d7f-1156-473f-8671-3f6cdf9e06d7
+2025-08-27 12:38:00:697 [fa302d7f][ADB] Found 3 'build-tools' folders under '/Users/swt/Library/Android/sdk' (newest first):
+2025-08-27 12:38:00:697 [fa302d7f][ADB]     /Users/swt/Library/Android/sdk/build-tools/36.1.0-rc1
+2025-08-27 12:38:00:697 [fa302d7f][ADB]     /Users/swt/Library/Android/sdk/build-tools/36.0.0
+2025-08-27 12:38:00:697 [fa302d7f][ADB]     /Users/swt/Library/Android/sdk/build-tools/35.0.0
+2025-08-27 12:38:00:697 [fa302d7f][ADB] Using 'adb' from '/Users/swt/Library/Android/sdk/platform-tools/adb'
+2025-08-27 12:38:00:697 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2025-08-27 12:38:00:709 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Retrieving device list
+2025-08-27 12:38:00:710 [fa302d7f][ADB] Trying to find connected Android devices
+2025-08-27 12:38:00:710 [fa302d7f][ADB] Getting connected devices
+2025-08-27 12:38:00:720 [fa302d7f][ADB] Connected devices: [{"udid":"emulator-5554","state":"device"},{"udid":"emulator-5556","state":"device"}]
+2025-08-27 12:38:00:721 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Using device: emulator-5556
+2025-08-27 12:38:00:721 [fa302d7f][ADB] Using 'adb' from '/Users/swt/Library/Android/sdk/platform-tools/adb'
+2025-08-27 12:38:00:721 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2025-08-27 12:38:00:731 [fa302d7f][ADB] Setting device id to emulator-5556
+2025-08-27 12:38:00:731 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] We're going to run a Chrome-based session
+2025-08-27 12:38:00:731 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell getprop ro.build.version.sdk'
+2025-08-27 12:38:00:749 [fa302d7f][ADB] Current device property 'ro.build.version.sdk': 36
+2025-08-27 12:38:00:749 [fa302d7f][ADB] Getting device platform version
+2025-08-27 12:38:00:749 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell getprop ro.build.version.release'
+2025-08-27 12:38:00:766 [fa302d7f][ADB] Current device property 'ro.build.version.release': 16
+2025-08-27 12:38:00:766 [fa302d7f][ADB] Device API level: 36
+2025-08-27 12:38:00:766 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell cmd package resolve-activity --brief com.android.chrome'
+2025-08-27 12:38:00:788 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Chrome-type package and activity are com.android.chrome and com.android.chrome/com.google.android.apps.chrome.Main
+2025-08-27 12:38:00:788 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Starting 'com.android.chrome' directly on the device
+2025-08-27 12:38:00:788 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Relaxing hidden api policy
+2025-08-27 12:38:00:788 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2025-08-27 12:38:00:789 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 wait-for-device'
+2025-08-27 12:38:00:799 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell echo ping'
+2025-08-27 12:38:00:819 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Pushing settings apk to the device...
+2025-08-27 12:38:00:819 [fa302d7f][ADB] Getting package info for 'io.appium.settings'
+2025-08-27 12:38:00:819 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell dumpsys package io.appium.settings'
+2025-08-27 12:38:00:852 [fa302d7f][ADB] Using 'aapt2' from '/Users/swt/Library/Android/sdk/build-tools/36.1.0-rc1/aapt2'
+2025-08-27 12:38:00:852 [fa302d7f][ADB] Reading package manifest: '/Users/swt/Library/Android/sdk/build-tools/36.1.0-rc1/aapt2 dump badging /Users/swt/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2025-08-27 12:38:00:863 [fa302d7f][ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('6.0.0' >= '6.0.0')
+2025-08-27 12:38:00:863 [fa302d7f][ADB] There is no need to install/upgrade '/Users/swt/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2025-08-27 12:38:00:863 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell dumpsys activity services io.appium.settings'
+2025-08-27 12:38:00:881 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] io.appium.settings is already running. There is no need to reset its permissions.
+2025-08-27 12:38:00:882 [fa302d7f][Logcat] Starting logs capture with command: /Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 logcat -v threadtime
+2025-08-27 12:38:00:901 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Forwarding UiAutomator2 Server port 6790 to local port 8201
+2025-08-27 12:38:00:903 [fa302d7f][ADB] Forwarding system: 8201 to device: 6790
+2025-08-27 12:38:00:903 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 forward tcp:8201 tcp:6790'
+2025-08-27 12:38:00:914 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] UIA2Proxy options: {"server":"127.0.0.1","port":8201,"keepAlive":true,"scheme":"http","base":"","reqBasePath":"","sessionId":null,"timeout":240000}
+2025-08-27 12:38:00:914 [fa302d7f][ADB] Getting package info for 'io.appium.uiautomator2.server'
+2025-08-27 12:38:00:914 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell dumpsys package io.appium.uiautomator2.server'
+2025-08-27 12:38:00:914 [fa302d7f][ADB] Getting install status for io.appium.uiautomator2.server.test
+2025-08-27 12:38:00:914 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] No app capability. Assuming it is already on the device
+2025-08-27 12:38:00:915 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell cmd package list packages'
+2025-08-27 12:38:00:971 [fa302d7f][ADB] Reading package manifest: '/Users/swt/Library/Android/sdk/build-tools/36.1.0-rc1/aapt2 dump badging /Users/swt/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v8.0.0.apk'
+2025-08-27 12:38:00:972 [fa302d7f][ADB] 'io.appium.uiautomator2.server.test' is installed
+2025-08-27 12:38:00:985 [fa302d7f][ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('8.0.0' >= '8.0.0')
+2025-08-27 12:38:00:985 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Server packages status: [{"installState":"sameVersionInstalled","appPath":"/Users/swt/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v8.0.0.apk","appId":"io.appium.uiautomator2.server"},{"installState":"sameVersionInstalled","appPath":"/Users/swt/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk","appId":"io.appium.uiautomator2.server.test"}]
+2025-08-27 12:38:00:985 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Server packages are not going to be (re)installed
+2025-08-27 12:38:00:985 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Waiting up to 30000ms for services to be available
+2025-08-27 12:38:00:986 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell pm list instrumentation'
+2025-08-27 12:38:01:019 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2025-08-27 12:38:01:020 [fa302d7f][ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2025-08-27 12:38:01:020 [fa302d7f][ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+2025-08-27 12:38:01:020 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+2025-08-27 12:38:01:065 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Performing shallow cleanup of automation leftovers
+2025-08-27 12:38:01:093 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] No obsolete sessions have been detected (socket hang up)
+2025-08-27 12:38:01:093 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell am force-stop io.appium.uiautomator2.server'
+2025-08-27 12:38:01:093 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell am force-stop io.appium.uiautomator2.server.test'
+2025-08-27 12:38:01:157 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Starting UIAutomator2 server 8.0.0
+2025-08-27 12:38:01:158 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Using UIAutomator2 server from '/Users/swt/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v8.0.0.apk' and test from '/Users/swt/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2025-08-27 12:38:01:158 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Waiting up to 30000ms for UiAutomator2 to be online...
+2025-08-27 12:38:01:158 [fa302d7f][ADB] Creating ADB subprocess with args: ["-P","5037","-s","emulator-5556","shell","am","instrument","-w","-e","disableAnalytics","true","io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+2025-08-27 12:38:01:160 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Matched '/status' to command name 'getStatus'
+2025-08-27 12:38:01:161 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Proxying [GET /status] to [GET http://127.0.0.1:8201/status] with no body
+2025-08-27 12:38:01:176 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] socket hang up
+2025-08-27 12:38:01:897 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] [Instrumentation] 
+2025-08-27 12:38:02:180 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Matched '/status' to command name 'getStatus'
+2025-08-27 12:38:02:180 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Proxying [GET /status] to [GET http://127.0.0.1:8201/status] with no body
+2025-08-27 12:38:02:198 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Got response with status 200: {"sessionId":"None","value":{"build":{"version":"8.0.0","versionCode":221},"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+2025-08-27 12:38:02:198 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] The initialization of the instrumentation process took 1041ms
+2025-08-27 12:38:02:199 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Matched '/session' to command name 'createSession'
+2025-08-27 12:38:02:199 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Proxying [POST /session] to [POST http://127.0.0.1:8201/session] with body: {"capabilities":{"firstMatch":[{"browserName":"Chrome","platformName":"ANDROID","autoGrantPermissions":true,"automationName":"UiAutomator2","chromedriverExecutableDir":"/opt/homebrew/lib/node_modules/chromedriver/lib/chromedriver","deviceName":"emulator-5556","fullReset":false,"newCommandTimeout":60,"noReset":true,"platformVersion":"16","systemPort":8201,"udid":"emulator-5556","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"browserName":"Chrome","platformName":"ANDROID","autoGrantPermissions":true,"automationName":"UiAutomator2","chromedriverExecutableDir":"/opt/homebrew/lib/node_modules/chromedriver/lib/chromedriver","deviceName":"sdk_gphone64_arm64","fullReset":false,"newCommandTimeout":60,"noReset":true,"platformVersion":"16","systemPort":8201,"udid":"emulator-5556","appPackage":"com.android.chrome","appActivity":"com.android.chrome/com.google.andr...
+2025-08-27 12:38:02:207 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Got response with status 200: {"sessionId":"812d590d-23ad-4cf1-b6bc-45f19510d8fc","value":{"capabilities":{"firstMatch":[{"browserName":"Chrome","platformName":"ANDROID","autoGrantPermissions":true,"automationName":"UiAutomator2","chromedriverExecutableDir":"/opt/homebrew/lib/node_modules/chromedriver/lib/chromedriver","deviceName":"emulator-5556","fullReset":false,"newCommandTimeout":60,"noReset":true,"platformVersion":"16","systemPort":8201,"udid":"emulator-5556","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"browserName":"Chrome","platformName":"ANDROID","autoGrantPermissions":true,"automationName":"UiAutomator2","chromedriverExecutableDir":"/opt/homebrew/lib/node_modules/chromedriver/lib/chromedriver","deviceName":"sdk_gphone64_arm64","fullReset":false,"newCommandTimeout":60,"noReset":true,"platformVersion":"16","systemPort":8201,"udid":"emulator-5556","appPackage":"com.andro...
+2025-08-27 12:38:02:207 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Determined the downstream protocol as 'W3C'
+2025-08-27 12:38:02:216 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8201/session/812d590d-23ad-4cf1-b6bc-45f19510d8fc/appium/device/pixel_ratio] with no body
+2025-08-27 12:38:02:217 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8201/session/812d590d-23ad-4cf1-b6bc-45f19510d8fc/appium/device/system_bars] with no body
+2025-08-27 12:38:02:218 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Proxying [GET /window/current/size] to [GET http://127.0.0.1:8201/session/812d590d-23ad-4cf1-b6bc-45f19510d8fc/window/current/size] with no body
+2025-08-27 12:38:02:220 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8201/session/812d590d-23ad-4cf1-b6bc-45f19510d8fc/appium/device/info] with no body
+2025-08-27 12:38:02:220 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell dumpsys window'
+2025-08-27 12:38:02:221 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell dumpsys power'
+2025-08-27 12:38:02:223 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Got response with status 200: {"sessionId":"812d590d-23ad-4cf1-b6bc-45f19510d8fc","value":2.625}
+2025-08-27 12:38:02:229 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Got response with status 200: {"sessionId":"812d590d-23ad-4cf1-b6bc-45f19510d8fc","value":{"height":2400,"width":1080}}
+2025-08-27 12:38:02:230 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Got response with status 200: {"sessionId":"812d590d-23ad-4cf1-b6bc-45f19510d8fc","value":{"statusBar":63}}
+2025-08-27 12:38:02:261 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Got response with status 200: {"sessionId":"812d590d-23ad-4cf1-b6bc-45f19510d8fc","value":{"androidId":"2271e0b05f20351c","apiVersion":"36","bluetooth":{"state":"ON"},"brand":"google","carrierName":"T-Mobile","displayDensity":420,"locale":"en_US","manufacturer":"Google","model":"sdk_gphone64_arm64","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":30000,"linkUpstreamBandwidthKbps":12000,"networkCapabilities":"NET_CAPABILITY_NOT_METERED,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_FOREGROUND,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-50,"transportTypes":"TRANSPORT_WIFI"},"detailedState":"CONNECTED","extraInfo":"","isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":-1,"subtypeName":"","type":1,"typeName":"WIFI"},{"capabilities":{"SSID":null,"linkDownBandwidthKbps":145000,"linkUpstreamBandwidthKbps":60000,"networkCapab...
+2025-08-27 12:38:02:363 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Screen already unlocked, doing nothing
+2025-08-27 12:38:02:364 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Starting a chrome-based browser session
+2025-08-27 12:38:02:365 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] A port was not given, using random free port: 58837
+2025-08-27 12:38:02:365 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Automated Chromedriver download is disabled. Use 'chromedriver_autodownload' server feature to enable it
+2025-08-27 12:38:02:367 [fa302d7f][Chromedriver@95b7] JWProxy options: {"server":"127.0.0.1","port":"58837","scheme":"http","base":"","reqBasePath":"","sessionId":null,"timeout":240000}
+2025-08-27 12:38:02:368 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Precalculated Chromedriver capabilities: {
+  "androidPackage": "com.android.chrome",
+  "androidDeviceSerial": "emulator-5556"
+}
+2025-08-27 12:38:02:368 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Before starting chromedriver, androidPackage is 'com.android.chrome'
+2025-08-27 12:38:02:369 [fa302d7f][Chromedriver@95b7] Changed state to 'starting'
+2025-08-27 12:38:02:369 [fa302d7f][Chromedriver@95b7] Using the static Chromedriver->Chrome mapping
+2025-08-27 12:38:02:370 [fa302d7f][Chromedriver@95b7] The most recent known Chrome version: 139.0.7258
+2025-08-27 12:38:02:373 [fa302d7f][Chromedriver@95b7] Found 1 executable in '/opt/homebrew/lib/node_modules/chromedriver/lib/chromedriver'
+2025-08-27 12:38:02:382 [fa302d7f][Chromedriver@95b7] The following Chromedriver executables were found:
+2025-08-27 12:38:02:382 [fa302d7f][Chromedriver@95b7]     '/opt/homebrew/lib/node_modules/chromedriver/lib/chromedriver/chromedriver' (version '133.0.6943.141', minimum Chrome version '133.0.6943')
+2025-08-27 12:38:02:382 [fa302d7f][ADB] Getting package info for 'com.android.chrome'
+2025-08-27 12:38:02:382 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell dumpsys package com.android.chrome'
+2025-08-27 12:38:02:419 [fa302d7f][Chromedriver@95b7] Found Chrome bundle 'com.android.chrome' version '133.0.6943'
+2025-08-27 12:38:02:419 [fa302d7f][Chromedriver@95b7] Found 1 executable capable of automating Chrome '133.0.6943'.
+Choosing the most recent, '/opt/homebrew/lib/node_modules/chromedriver/lib/chromedriver/chromedriver'.
+2025-08-27 12:38:02:419 [fa302d7f][Chromedriver@95b7] If a specific version is required, specify it with the 'chromedriverExecutable' capability.
+2025-08-27 12:38:02:420 [fa302d7f][Chromedriver@95b7] Set chromedriver binary as: /opt/homebrew/lib/node_modules/chromedriver/lib/chromedriver/chromedriver
+2025-08-27 12:38:02:420 [fa302d7f][Chromedriver@95b7] Killing any old chromedrivers, running: pkill -15 -f "/opt/homebrew/lib/node_modules/chromedriver/lib/chromedriver/chromedriver.*--port=58837"
+2025-08-27 12:38:02:440 [fa302d7f][Chromedriver@95b7] No old chromedrivers seem to exist
+2025-08-27 12:38:02:440 [fa302d7f][Chromedriver@95b7] Cleaning this device's adb forwarded port socket connections: emulator-5556
+2025-08-27 12:38:02:440 [fa302d7f][ADB] List forwarding ports
+2025-08-27 12:38:02:440 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 forward --list'
+2025-08-27 12:38:02:450 [fa302d7f][Chromedriver@95b7] Spawning Chromedriver with: /opt/homebrew/lib/node_modules/chromedriver/lib/chromedriver/chromedriver --port=58837 --adb-port=5037 --verbose
+2025-08-27 12:38:02:456 [fa302d7f][Chromedriver@95b7] Matched '/status' to command name 'getStatus'
+2025-08-27 12:38:02:456 [fa302d7f][Chromedriver@95b7] Proxying [GET /status] to [GET http://127.0.0.1:58837/status] with no body
+2025-08-27 12:38:02:460 [fa302d7f][Chromedriver@95b7] Got response with status 200: {"value":{"build":{"version":"133.0.6943.141 (2a5d6da0d6165d7b107502095a937fe7704fcef6-refs/branch-heads/6943@{#1912})"},"message":"ChromeDriver ready for new sessions.","os":{"arch":"arm64","name":"Mac OS X","version":"15.6.0"},"ready":true}}
+2025-08-27 12:38:02:460 [fa302d7f][Chromedriver@95b7] Chromedriver version: 133.0.6943.141
+2025-08-27 12:38:02:461 [fa302d7f][Chromedriver@95b7] Starting W3C Chromedriver session with capabilities: {
+  "capabilities": {
+    "alwaysMatch": {
+      "goog:chromeOptions": {
+        "androidPackage": "com.android.chrome",
+        "androidDeviceSerial": "emulator-5556"
+      },
+      "goog:loggingPrefs": {
+        "browser": "ALL"
+      }
+    }
+  }
+}
+2025-08-27 12:38:02:461 [fa302d7f][Chromedriver@95b7] Matched '/session' to command name 'createSession'
+2025-08-27 12:38:02:461 [fa302d7f][Chromedriver@95b7] Proxying [POST /session] to [POST http://127.0.0.1:58837/session] with body: {"capabilities":{"alwaysMatch":{"goog:chromeOptions":{"androidPackage":"com.android.chrome","androidDeviceSerial":"emulator-5556"},"goog:loggingPrefs":{"browser":"ALL"}}}}
+2025-08-27 12:38:04:429 [fa302d7f][Chromedriver@95b7] Webview version: 'Chrome/133.0.6943.137'
+2025-08-27 12:38:04:497 [fa302d7f][Chromedriver@95b7] Got response with status 200: {"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"133.0.6943.137","chrome":{"chromedriverVersion":"133.0.6943.141 (2a5d6da0d6165d7b107502095a937fe7704fcef6-refs/branch-heads/6943@{#1912})"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:58876"},"pageLoadStrategy":"normal","platformName":"android","proxy":{},"setWindowRect":false,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":false,"webauthn:extension:largeBlob":false,"webauthn:extension:minPinLength":false,"webauthn:extension:prf":false,"webauthn:virtualAuthenticators":false},"sessionId":"c05883ed12419556d38766487a470fc8"}}
+2025-08-27 12:38:04:497 [fa302d7f][Chromedriver@95b7] Determined the downstream protocol as 'W3C'
+2025-08-27 12:38:04:497 [fa302d7f][Chromedriver@95b7] Changed state to 'online'
+2025-08-27 12:38:04:498 [fa302d7f][AppiumDriver@afde] New AndroidUiautomator2Driver session created successfully, session fa302d7f-1156-473f-8671-3f6cdf9e06d7 added to master session list
+2025-08-27 12:38:04:498 [fa302d7f][AppiumDriver@afde] Event 'newSessionStarted' logged at 1756298284498 (15:38:04 GMT+0300 (GMT+03:00))
+2025-08-27 12:38:04:498 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Cached the protocol value 'W3C' for the new session fa302d7f-1156-473f-8671-3f6cdf9e06d7
+2025-08-27 12:38:04:499 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Responding to client with driver.createSession() result: {"capabilities":{"browserName":"Chrome","platformName":"ANDROID","autoGrantPermissions":true,"automationName":"UiAutomator2","chromedriverExecutableDir":"/opt/homebrew/lib/node_modules/chromedriver/lib/chromedriver","deviceName":"emulator-5556","fullReset":false,"newCommandTimeout":60,"noReset":true,"platformVersion":"16","systemPort":8201,"udid":"emulator-5556","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"browserName":"Chrome","platformName":"ANDROID","autoGrantPermissions":true,"automationName":"UiAutomator2","chromedriverExecutableDir":"/opt/homebrew/lib/node_modules/chromedriver/lib/chromedriver","deviceName":"sdk_gphone64_arm64","fullReset":false,"newCommandTimeout":60,"noReset":true,"platformVersion":"16","systemPort":8201,"udid":"emulator-5556","appPackage":"com.android.chrome","appActivity":"com.android.chrome/com.google.android.apps.chrome...
+2025-08-27 12:38:04:503 [fa302d7f][HTTP] <-- POST /wd/hub/session 200 3817 ms - 1364 
+2025-08-27 12:38:04:597 [fa302d7f][HTTP] --> DELETE /wd/hub/session/fa302d7f-1156-473f-8671-3f6cdf9e06d7 
+2025-08-27 12:38:04:597 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Calling AppiumDriver.deleteSession() with args: ["fa302d7f-1156-473f-8671-3f6cdf9e06d7"]
+2025-08-27 12:38:04:598 [fa302d7f][AppiumDriver@afde] Event 'quitSessionRequested' logged at 1756298284598 (15:38:04 GMT+0300 (GMT+03:00))
+2025-08-27 12:38:04:598 [fa302d7f][AppiumDriver@afde] Removing session fa302d7f-1156-473f-8671-3f6cdf9e06d7 from our master session list
+2025-08-27 12:38:04:598 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Deleting UiAutomator2 session
+2025-08-27 12:38:04:598 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Stopping chromedriver for context CHROMIUM
+2025-08-27 12:38:04:598 [fa302d7f][Chromedriver@95b7] Changed state to 'stopping'
+2025-08-27 12:38:04:598 [fa302d7f][Chromedriver@95b7] Proxying [DELETE /] to [DELETE http://127.0.0.1:58837/session/c05883ed12419556d38766487a470fc8] with no body
+2025-08-27 12:38:04:695 [fa302d7f][Chromedriver@95b7] Got response with status 200: {"value":null}
+2025-08-27 12:38:04:695 [fa302d7f][Chromedriver@95b7] Changed state to 'stopped'
+2025-08-27 12:38:04:695 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Deleting UiAutomator2 server session
+2025-08-27 12:38:04:695 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Proxying [DELETE /] to [DELETE http://127.0.0.1:8201/session/812d590d-23ad-4cf1-b6bc-45f19510d8fc] with no body
+2025-08-27 12:38:04:708 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Got response with status 200: {"sessionId":"812d590d-23ad-4cf1-b6bc-45f19510d8fc","value":null}
+2025-08-27 12:38:04:708 [fa302d7f][ADB] Getting IDs of all 'io.appium.uiautomator2.server' processes
+2025-08-27 12:38:04:708 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell 'pgrep --help; echo $?''
+2025-08-27 12:38:04:738 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.uiautomator2\.server\(:\[a-zA-Z0-9_-\]\+\)\?\(\[\[:blank:\]\]\|\$\)'
+2025-08-27 12:38:04:787 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] [Instrumentation] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:.
+2025-08-27 12:38:04:787 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] [Instrumentation] 
+2025-08-27 12:38:04:787 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] [Instrumentation] Time: 2.859
+2025-08-27 12:38:04:787 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] [Instrumentation] 
+2025-08-27 12:38:04:787 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] [Instrumentation] OK (1 test)
+2025-08-27 12:38:04:787 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] [Instrumentation] 
+2025-08-27 12:38:04:787 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] [Instrumentation] 
+2025-08-27 12:38:04:806 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] [Instrumentation] The process has exited with code 0, signal null
+2025-08-27 12:38:05:088 [fa302d7f][ADB] Getting IDs of all 'io.appium.uiautomator2.server' processes
+2025-08-27 12:38:05:088 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.uiautomator2\.server\(:\[a-zA-Z0-9_-\]\+\)\?\(\[\[:blank:\]\]\|\$\)'
+2025-08-27 12:38:05:137 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell am force-stop io.appium.uiautomator2.server'
+2025-08-27 12:38:05:138 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell am force-stop io.appium.uiautomator2.server.test'
+2025-08-27 12:38:05:207 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+2025-08-27 12:38:05:208 [fa302d7f][ADB] Removing forwarded port socket connection: 8201 
+2025-08-27 12:38:05:208 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 forward --remove tcp:8201'
+2025-08-27 12:38:05:222 [fa302d7f][38;5;-125m[AndroidUiautomator2Driver@039d] Restoring hidden api policy to the device default configuration
+2025-08-27 12:38:05:222 [fa302d7f][ADB] Running '/Users/swt/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5556 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2025-08-27 12:38:05:289 [fa302d7f][Logcat] Stopping logcat capture
+2025-08-27 12:38:05:290 [fa302d7f][AppiumDriver@afde] Event 'quitSessionFinished' logged at 1756298285290 (15:38:05 GMT+0300 (GMT+03:00))
+2025-08-27 12:38:05:290 [fa302d7f][AppiumDriver@afde] Received response: null
+2025-08-27 12:38:05:290 [fa302d7f][AppiumDriver@afde] But deleting session, so not returning
+2025-08-27 12:38:05:290 [fa302d7f][AppiumDriver@afde] Responding to client with driver.deleteSession() result: null
+2025-08-27 12:38:05:290 [fa302d7f][HTTP] <-- DELETE /wd/hub/session/fa302d7f-1156-473f-8671-3f6cdf9e06d7 200 693 ms - 14 
+2025-08-27 12:38:06:141 [Appium] Received SIGTERM - shutting down

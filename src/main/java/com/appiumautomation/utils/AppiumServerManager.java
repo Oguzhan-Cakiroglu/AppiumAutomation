@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.util.Map;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -55,21 +56,44 @@ public class AppiumServerManager {
             logger.info("Appium sunucusu başlatılıyor - Port: {}, Cihaz: {}", 
                        device.getAppiumPort(), device.getDeviceName());
             
+            // Appium binary yolunu bul (Homebrew global kurulum öncelikli)
+            String appiumBinary = "/opt/homebrew/bin/appium";
+            java.io.File appiumBinFile = new java.io.File(appiumBinary);
+            if (!appiumBinFile.exists()) {
+                appiumBinary = "appium";
+            }
+
             // Appium sunucusu başlatma komutu
             String appiumCommand = String.format(
-                "appium --port %d --base-path /wd/hub --log appium_%s.log",
-                device.getAppiumPort(), device.getDeviceId()
+                "%s --port %d --base-path /wd/hub --log appium_%s.log",
+                appiumBinary, device.getAppiumPort(), device.getDeviceId()
             );
             
             ProcessBuilder processBuilder = new ProcessBuilder();
             processBuilder.command("sh", "-c", appiumCommand);
             processBuilder.redirectErrorStream(true);
+
+            // Appium sürecine Android SDK/JAVA ortam değişkenlerini geçir
+            String sdkRoot = System.getenv().getOrDefault("ANDROID_SDK_ROOT", System.getProperty("user.home") + "/Library/Android/sdk");
+            String androidHome = System.getenv().getOrDefault("ANDROID_HOME", sdkRoot);
+            String javaHome = System.getenv().getOrDefault("JAVA_HOME", "/opt/homebrew/opt/openjdk");
+
+            String toolsPath = sdkRoot + "/tools/bin";
+            String platformToolsPath = sdkRoot + "/platform-tools";
+            String emulatorPath = sdkRoot + "/emulator";
+            String cmdlineToolsPath = "/opt/homebrew/share/android-commandlinetools/cmdline-tools/latest/bin";
+
+            Map<String, String> env = processBuilder.environment();
+            env.put("ANDROID_SDK_ROOT", sdkRoot);
+            env.put("ANDROID_HOME", androidHome);
+            env.put("JAVA_HOME", javaHome);
+            env.put("PATH", javaHome + "/bin:" + platformToolsPath + ":" + emulatorPath + ":" + cmdlineToolsPath + ":" + toolsPath + ":" + env.getOrDefault("PATH", ""));
             
             Process process = processBuilder.start();
             appiumProcesses.add(process);
             
             // Sunucunun başlamasını bekle
-            Thread.sleep(5000);
+            Thread.sleep(8000);
             
             // Sunucu durumunu kontrol et
             if (process.isAlive()) {

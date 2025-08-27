@@ -8,33 +8,26 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Appium Multi Device Test Suite</th></tr>
-<tr><td><a href="#t0">Android Settings Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">444</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Smoke Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td>smoke</td><td></td></tr>
-<tr><td><a href="#t2">Regression Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td>regression</td><td></td></tr>
-<tr class="stripe"><td><a href="#t3">Wi-Fi Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td>wifi</td><td></td></tr>
-<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">444</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Chrome Browser Test Suite</th></tr>
+<tr><td><a href="#t0">Chrome Browser Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">44,609</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Appium Multi Device Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Android Settings Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.appiumautomation.testrunners.CucumberTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1756233885436</td><td rowspan="1">43</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4" class="invisible"/></tr></tbody>
-<tbody id="t2"><tr><th colspan="4" class="invisible"/></tr></tbody>
-<tbody id="t3"><tr><th colspan="4" class="invisible"/></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Chrome Browser Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Chrome Browser Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">com.appiumautomation.testrunners.CucumberTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="4">1756298024997</td><td rowspan="4">44390</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m3">runScenario</a></td></tr></tbody>
 </table>
-<h2>Android Settings Tests</h2><h3 id="m0">com.appiumautomation.testrunners.CucumberTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Chrome&apos;da Google&apos;a Gitme&quot;</td><td>&quot;Chrome Browser Test&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalStateException: Cannot stop.  Current container state was: CONSTRUCTED
-	at org.picocontainer.lifecycle.DefaultLifecycleState.stopping(DefaultLifecycleState.java:72)
-	at org.picocontainer.DefaultPicoContainer.stop(DefaultPicoContainer.java:794)
-	at io.cucumber.picocontainer.PicoFactory.stop(PicoFactory.java:50)
-	at io.cucumber.core.runner.Runner.disposeBackendWorlds(Runner.java:156)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:78)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
-	at java.base/java.lang.Thread.run(Thread.java:1447)
-... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Smoke Tests</h2><h2>Regression Tests</h2><h2>Wi-Fi Tests</h2></body>
+<h2>Chrome Browser Tests</h2><h3 id="m0">com.appiumautomation.testrunners.CucumberTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Chrome&apos;da Google&apos;a Gitme&quot;</td><td>&quot;Chrome Browser Test&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.RuntimeException: Driver bulunamadı: device1
+	at com.appiumautomation.steps.ChromeSteps.kullaniciCihazdaChromuAcar(ChromeSteps.java:27)
+	at ✽.kullanıcı &quot;device1&quot; cihazında Chrome&apos;u açar(file:///Users/swt/Desktop/git/AppiumAutomation/src/test/resources/features/chrome_test.feature:9)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.appiumautomation.testrunners.CucumberTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Ayarlar Arama Fonksiyonu&quot;</td><td>&quot;Android Ayarlar Uygulaması Testleri&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.RuntimeException: Driver bulunamadı: device1
+	at com.appiumautomation.steps.CommonSteps.kullaniciCihazdaUygulamayiAcar(CommonSteps.java:28)
+	at ✽.kullanıcı &quot;device1&quot; cihazında uygulamayı açar(file:///Users/swt/Desktop/git/AppiumAutomation/src/test/resources/features/settings_test.feature:6)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.appiumautomation.testrunners.CucumberTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Wi-Fi Ayarlarını Kontrol Etme&quot;</td><td>&quot;Android Ayarlar Uygulaması Testleri&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.RuntimeException: Driver bulunamadı: device1
+	at com.appiumautomation.steps.CommonSteps.kullaniciCihazdaUygulamayiAcar(CommonSteps.java:28)
+	at ✽.kullanıcı &quot;device1&quot; cihazında uygulamayı açar(file:///Users/swt/Desktop/git/AppiumAutomation/src/test/resources/features/settings_test.feature:6)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.appiumautomation.testrunners.CucumberTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Ayarlar Menüsünde Gezinme&quot;</td><td>&quot;Android Ayarlar Uygulaması Testleri&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.RuntimeException: Driver bulunamadı: device1
+	at com.appiumautomation.steps.CommonSteps.kullaniciCihazdaUygulamayiAcar(CommonSteps.java:28)
+	at ✽.kullanıcı &quot;device1&quot; cihazında uygulamayı açar(file:///Users/swt/Desktop/git/AppiumAutomation/src/test/resources/features/settings_test.feature:6)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
 </html>
